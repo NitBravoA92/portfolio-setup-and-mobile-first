@@ -22,7 +22,7 @@
 
 # 📖 Portfolio: Setup and Mobile First <a name="about-project"></a>
 
-**Portfolio: Setup and Mobile First** is a project made with HTML and CSS, which consists of the mobile design of the first two sections (Header and Headline) of a Professional Web Portfolio. This project seeks to test the skills for web layout using the mobile first approach.
+**Portfolio: Setup and Mobile First** It is a project made with HTML and CSS, which consists of the mobile design of the main sections (Header, Headline, Works, and About Myself) of a Professional Web Portfolio. This project is focused on testing the skills for web layout using the mobile-first approach.
 
 ## 🛠 Built With <a name="built-with"></a>
 
