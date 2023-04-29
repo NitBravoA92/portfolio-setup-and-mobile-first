@@ -590,4 +590,61 @@ header {
     top: 0;
     height: 721px;
   }
+
+  .work-section  .container.projects-list {
+    grid-auto-rows: minmax(496px, auto);
+  }
+  
+  .work-section .container.projects-list .project {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 24px;
+    border-radius: 24px;
+  }
+  
+  .work-section .projects-list .project .preview-image {
+    width: 50%;
+    height: 448px;
+  }
+
+  .work-section .projects-list .project .details {
+    width: 50%;
+    justify-content: flex-start;
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .work-section .projects-list .project .details .name {
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  .work-section .projects-list .project .details .developer-role .client-name,
+  .work-section .projects-list .project .details .developer-role .role,
+  .work-section .projects-list .project .details .developer-role .year-label  {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .work-section .projects-list .project .details .developer-role .client-name {
+    font-weight: 500;
+  }
+
+  .work-section .projects-list .project .details .developer-role .role,
+  .work-section .projects-list .project .details .developer-role .year-label {
+    font-weight: 400;
+  }
+
+  .work-section .projects-list .project .details .developer-role .role,
+  .work-section .projects-list .project .details .developer-role .year-label {
+    color: #6b778c;
+  } 
+
+  .work-section .projects-list .project .details  .description {
+    font-size: 16px;
+  }
+
 }
