@@ -43,7 +43,7 @@
 - **Support for all Browsers**
 - **SEO Friendly**
 - **Use of semantic HTML in the code structure**
-- **Use of CSS Flexbox to give a better appearance to the design**
+- **Combination of the Grid and Flebox system to build the layout**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
