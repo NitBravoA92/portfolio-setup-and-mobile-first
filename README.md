@@ -72,7 +72,7 @@ It is also important to have at least basic knowledge of HTML and CSS languages,
 - [Learn the basics of CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [Basic concepts of flexbox](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
 - [Learn flexbox playing with FROGGY](https://flexboxfroggy.com/)
-
+- [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 ### Install
 
