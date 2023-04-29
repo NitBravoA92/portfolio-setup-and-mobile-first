@@ -647,4 +647,42 @@ header {
     font-size: 16px;
   }
 
+  .about-myself-section .container {
+    max-width: 767px;
+    width: 100%;
+    flex-direction: row;
+    padding: 166px 24px;
+  }
+  
+  .about-myself-section .about-me,
+  .about-myself-section .tech-skills {
+    width: 50%;
+  }
+
+  .skills-list-box {
+    margin: 0;
+  }
+
+  .about-myself-section .about-me {
+    padding-top: 12px;
+  }
+
+  .skills-list-box .skill-item  .content .skills-details {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+  }
+  
+  .skills-list-box .skill-item  .content .skills-details li {
+    width: 122px;
+    height: 120px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    padding: 12px;
+    gap: 12px;
+  }
 }
+
