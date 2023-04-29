@@ -106,7 +106,9 @@ This will show you a log with details about errors (if any) and changes that wou
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Create the mobile version of a new section to list all portfolio Projects**
+- [x] **Create the mobile version of a new section to list all portfolio Projects**
+- [ ] **Create the mobile version of the contact section**
+- [ ] **Create the mobile version of a popup window to show the details of a project**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
