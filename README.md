@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 <div align="center">
-  <h3><b>Portfolio: Setup and Mobile First</b></h3>
+  <h3><b>Portfolio: Finish Mobile Version</b></h3>
 </div>
 
 # 📗 Table of Contents
@@ -20,9 +20,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Portfolio: Setup and Mobile First <a name="about-project"></a>
+# 📖 Portfolio: Finish Mobile Version <a name="about-project"></a>
 
-**Portfolio: Setup and Mobile First** is a project made with HTML and CSS, which consists of the mobile design of the first two sections (Header and Headline) of a Professional Web Portfolio. This project seeks to test the skills for web layout using the mobile first approach.
+**Portfolio: Finish Mobile Version** It is a project made with HTML and CSS, which consists of the mobile design of the main sections (Header, Headline, Works, and About Myself) of a Professional Web Portfolio. This project is focused on testing the skills for web layout using the mobile-first approach.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -43,7 +43,7 @@
 - **Support for all Browsers**
 - **SEO Friendly**
 - **Use of semantic HTML in the code structure**
-- **Use of CSS Flexbox to give a better appearance to the design**
+- **Combination of the Grid and Flebox system to build the layout**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -72,7 +72,7 @@ It is also important to have at least basic knowledge of HTML and CSS languages,
 - [Learn the basics of CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [Basic concepts of flexbox](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
 - [Learn flexbox playing with FROGGY](https://flexboxfroggy.com/)
-
+- [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 ### Install
 
@@ -106,7 +106,9 @@ This will show you a log with details about errors (if any) and changes that wou
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Create the mobile version of a new section to list all portfolio Projects**
+- [x] **Create the mobile version of a new section to list all portfolio Projects**
+- [ ] **Create the mobile version of the contact section**
+- [ ] **Create the mobile version of a popup window to show the details of a project**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
