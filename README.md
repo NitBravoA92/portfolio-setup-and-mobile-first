@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 <div align="center">
-  <h3><b>Portfolio: Setup and Mobile First</b></h3>
+  <h3><b>Portfolio: Finish Mobile Version</b></h3>
 </div>
 
 # 📗 Table of Contents
@@ -20,9 +20,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Portfolio: Setup and Mobile First <a name="about-project"></a>
+# 📖 Portfolio: Finish Mobile Version <a name="about-project"></a>
 
-**Portfolio: Setup and Mobile First** It is a project made with HTML and CSS, which consists of the mobile design of the main sections (Header, Headline, Works, and About Myself) of a Professional Web Portfolio. This project is focused on testing the skills for web layout using the mobile-first approach.
+**Portfolio: Finish Mobile Version** It is a project made with HTML and CSS, which consists of the mobile design of the main sections (Header, Headline, Works, and About Myself) of a Professional Web Portfolio. This project is focused on testing the skills for web layout using the mobile-first approach.
 
 ## 🛠 Built With <a name="built-with"></a>
 
