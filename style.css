@@ -368,6 +368,179 @@ header {
   align-items: flex-start;
 }
 
+.about-myself-section {
+  width: 100%;
+  min-height: 465px;
+  position: relative;
+  padding-bottom: 68px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-myself-section .section-mobile-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./img/aboutme-background-mobile.png');
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-myself-section .container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 114px 24px;
+  gap: 12px;
+}
+
+.about-myself-section .about-me,
+.about-myself-section .tech-skills {
+  width: 100%;
+}
+
+.about-myself-section .section-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  color: #172B4D;
+}
+
+.about-myself-section .about-me-message {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  padding: 10px 0;
+}
+
+.about-myself-section .social-media {
+  gap: 26px;
+  margin: 6px 0;
+}
+
+.social-media-links {
+  gap: 24px;
+}
+
+.get-resumen {
+  width: 100%;
+  padding: 14px 0;
+}
+
+.skills-list-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  margin: 10px 0;
+}
+
+.skills-list-box .skill-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  position: relative;
+}
+
+.skills-list-box .skill-item .title {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 24px 24px 12px;
+  border-bottom: 1px solid #DFE1E6;
+}
+
+.skills-list-box .skill-item.active .title {
+  border-color: transparent;
+}
+
+.skills-list-box .skill-item .title h3 {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.skills-list-box .skill-item .title button {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-list-box .skill-item .title button span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-list-box .skill-item .content {
+  display: none;
+}
+
+.skills-list-box .skill-item.active .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
+  width: 100%;
+}
+
+.skills-list-box .skill-item  .content .skills-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skills-list-box .skill-item  .content .skills-details li {
+  width: 100%;
+  height: 67px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  background-color: #F7F7F9;
+  border-radius: 8px;
+  padding: 9px 12px;
+}
+.skills-list-box .skill-item  .content .skills-details li .skill-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
+.skills-list-box .skill-item  .content .skills-details li .icon {
+  width: 48px;
+  height: 48px;
+}
+
 @media only screen and (min-width: 768px) {
   .btn-mobile-menu {
     display: none;
