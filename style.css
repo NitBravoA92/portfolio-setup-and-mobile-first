@@ -334,12 +334,21 @@ header {
 }
 
 .work-section .projects-list .project .details .technologies-tags {
+  float: left;
+  display: inline-flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+/*
+.work-section .projects-list .project .details .technologies-tags {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0;
   gap: 8px;
 }
+*/
 
 .skills-list-box .skill-item .content .skills-details li {
   width: 100%;
