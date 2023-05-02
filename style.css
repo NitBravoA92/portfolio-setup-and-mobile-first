@@ -154,6 +154,7 @@ header {
   padding-top: 80px;
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f9;
 }
 
 .headline-section .container {
@@ -241,6 +242,7 @@ header {
   position: relative;
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f9;
 }
 
 .work-section .container.projects-list {
@@ -403,6 +405,7 @@ header {
   position: relative;
   padding-bottom: 68px;
   font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f9;
 }
 
 .about-myself-section .section-mobile-bg {
