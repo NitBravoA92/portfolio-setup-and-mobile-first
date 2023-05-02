@@ -568,6 +568,18 @@ footer {
   border-top-left-radius: 80px;
 }
 
+.contact-form .section-mobile-shape {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 2%;
+  background-image: url('./img/contact-form-shapes-mobile.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 265px 91%;
+}
+
 .contact-form .container {
   width: 100%;
   margin: 0 auto;
