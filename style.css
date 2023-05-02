@@ -553,6 +553,33 @@ header {
   height: 48px;
 }
 
+footer {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.contact-form {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  background-color: #6070FF;
+  border: none;
+  border-top-left-radius: 80px;
+}
+
+.contact-form .container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 103px 24px 0 24px;
+  gap: 12px;
+}
+
 @media only screen and (min-width: 768px) {
   .btn-mobile-menu {
     display: none;
