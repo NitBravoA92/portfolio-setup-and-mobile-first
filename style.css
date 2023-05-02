@@ -654,6 +654,22 @@ footer {
   background-color: #eafaee;
 }
 
+.contact-form .container .divider-container {
+  width: 100%;
+  padding: 20px 0 8px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form .container .divider-container .divider {
+  width: 134px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #0d151e;
+}
+
 @media only screen and (min-width: 768px) {
   .btn-mobile-menu {
     display: none;
