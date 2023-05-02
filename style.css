@@ -601,6 +601,59 @@ footer {
   padding-bottom: 40px;
 }
 
+.contact-form .container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact-form .container form .form-element-container {
+  width: 100%;
+}
+
+.contact-form .container form .form-element-container:first-child {
+  padding-bottom: 20px;
+}
+
+.contact-form .container form .form-element-container:nth-child(2){
+  padding-bottom: 18px;
+}
+
+.contact-form .container form .form-element-container:nth-child(3){
+  padding-bottom: 22px;
+}
+
+.contact-form .container form .form-element {
+  width: 100%;
+  padding: 15px 38px 15px 16px;
+  background-color: #ffffff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+}
+
+.contact-form .container form .form-element::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+}
+
+.contact-form .container form input:valid,
+.contact-form .container form textarea:valid {
+  border: 2px solid #49e773;
+  background-color: #eafaee;
+}
+
 @media only screen and (min-width: 768px) {
   .btn-mobile-menu {
     display: none;
