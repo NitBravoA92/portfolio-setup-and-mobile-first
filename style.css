@@ -580,6 +580,27 @@ footer {
   gap: 12px;
 }
 
+.contact-form .container .section-title {
+  width: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contact-form .container .contact-message {
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  padding-bottom: 40px;
+}
+
 @media only screen and (min-width: 768px) {
   .btn-mobile-menu {
     display: none;
