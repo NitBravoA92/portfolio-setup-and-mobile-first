@@ -751,14 +751,6 @@ footer {
     line-height: 28px;
   }
 
-  .social-media {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
-    gap: 14px;
-  }
-
   .connect-message {
     padding-top: 10px;
   }
