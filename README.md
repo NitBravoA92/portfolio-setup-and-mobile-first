@@ -22,7 +22,7 @@
 
 # 📖 Portfolio: Finish Mobile Version <a name="about-project"></a>
 
-**Portfolio: Finish Mobile Version** It is a project made with HTML and CSS, which consists of the mobile design of the main sections (Header, Headline, Works, and About Myself) of a Professional Web Portfolio. This project is focused on testing the skills for web layout using the mobile-first approach.
+**Portfolio: Finish Mobile Version** It is a project made with HTML and CSS, which consists of the mobile design of the main sections (Header, Headline, Works, About Myself and Contact form) of a Professional Web Portfolio. This project is focused on testing the skills for web layout using the mobile-first approach.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -44,6 +44,7 @@
 - **SEO Friendly**
 - **Use of semantic HTML in the code structure**
 - **Combination of the Grid and Flebox system to build the layout**
+- **Client side form Validations**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -73,6 +74,9 @@ It is also important to have at least basic knowledge of HTML and CSS languages,
 - [Basic concepts of flexbox](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
 - [Learn flexbox playing with FROGGY](https://flexboxfroggy.com/)
 - [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [Web forms — Working with user data](https://developer.mozilla.org/en-US/docs/Learn/Forms)
+- [The HTML5 input types](https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types)
+- [Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
 
 ### Install
 
@@ -102,13 +106,20 @@ This will show you a log with details about errors (if any) and changes that wou
 - Twitter: [@softwareDevOne](https://twitter.com/softwareDevOne)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/nitcelis-bravo-alcala-b65340158)
 
+👤 **Syeda Masuma Fatima**
+
+- GitHub: [@MasumaJaffery](https://github.com/MasumaJaffery)
+- Twitter: [@MasumaJaffery](https://twitter.com/MasumaJaffery)
+- LinkedIn: [Masuma Jaffery](https://www.linkedin.com/in/masuma-jaffery-797a29256/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [x] **Create the mobile version of a new section to list all portfolio Projects**
-- [ ] **Create the mobile version of the contact section**
+- [x] **Create the mobile version of the contact section**
 - [ ] **Create the mobile version of a popup window to show the details of a project**
+- [ ] **Create the desktop version of the webpage**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

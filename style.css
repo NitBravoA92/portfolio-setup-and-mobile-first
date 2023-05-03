@@ -18,7 +18,7 @@ a {
 
 body {
   width: 100%;
-  background-color: #f7f7f9;
+  background-color: #fff;
   position: relative;
 }
 
@@ -154,6 +154,7 @@ header {
   padding-top: 80px;
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f9;
 }
 
 .headline-section .container {
@@ -241,6 +242,7 @@ header {
   position: relative;
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f9;
 }
 
 .work-section .container.projects-list {
@@ -334,9 +336,9 @@ header {
 }
 
 .work-section .projects-list .project .details .technologies-tags {
- gap: 0.5rem;
- display: inline-flex;
- float: left;
+  gap: 0.5rem;
+  display: inline-flex;
+  float: left;
 }
 
 /*
@@ -403,6 +405,7 @@ header {
   position: relative;
   padding-bottom: 68px;
   font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f9;
 }
 
 .about-myself-section .section-mobile-bg {
@@ -550,6 +553,135 @@ header {
   height: 48px;
 }
 
+footer {
+  width: 100%;
+  background-color: #fff;
+}
+
+.contact-form {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  background-color: #6070ff;
+  border: none;
+  border-top-left-radius: 80px;
+}
+
+.contact-form .section-mobile-shape {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 2%;
+  background-image: url('./img/contact-form-shapes-mobile.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 265px 91%;
+}
+
+.contact-form .container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 103px 24px 0 24px;
+  gap: 12px;
+}
+
+.contact-form .container .section-title {
+  width: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-form .container .contact-message {
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  padding-bottom: 40px;
+}
+
+.contact-form .container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact-form .container form .form-element-container {
+  width: 100%;
+}
+
+.contact-form .container form .form-element-container:first-child {
+  padding-bottom: 20px;
+}
+
+.contact-form .container form .form-element-container:nth-child(2) {
+  padding-bottom: 18px;
+}
+
+.contact-form .container form .form-element-container:nth-child(3) {
+  padding-bottom: 22px;
+}
+
+.contact-form .container form .form-element {
+  width: 100%;
+  padding: 15px 38px 15px 16px;
+  background-color: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+}
+
+.contact-form .container form .form-element::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+}
+
+.contact-form .container form input:valid,
+.contact-form .container form textarea:valid {
+  border: 2px solid #49e773;
+  background-color: #eafaee;
+}
+
+.contact-form .container .divider-container {
+  width: 100%;
+  padding: 20px 0 8px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form .container .divider-container .divider {
+  width: 134px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #0d151e;
+}
+
 @media only screen and (min-width: 768px) {
   .btn-mobile-menu {
     display: none;
@@ -688,5 +820,15 @@ header {
     align-items: start;
     padding: 12px;
     gap: 12px;
+  }
+
+  .contact-form .section-mobile-shape {
+    left: 0;
+    right: 0;
+    top: 0;
+    background-image: url('./img/contact-form-desktop-shapes-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 91%;
   }
 }
