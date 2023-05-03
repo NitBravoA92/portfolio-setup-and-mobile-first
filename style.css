@@ -18,7 +18,7 @@ a {
 
 body {
   width: 100%;
-  background-color: #ffffff;
+  background-color: #fff;
   position: relative;
 }
 
@@ -336,9 +336,9 @@ header {
 }
 
 .work-section .projects-list .project .details .technologies-tags {
- gap: 0.5rem;
- display: inline-flex;
- float: left;
+  gap: 0.5rem;
+  display: inline-flex;
+  float: left;
 }
 
 /*
@@ -555,7 +555,7 @@ header {
 
 footer {
   width: 100%;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .contact-form {
@@ -563,7 +563,7 @@ footer {
   position: relative;
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
-  background-color: #6070FF;
+  background-color: #6070ff;
   border: none;
   border-top-left-radius: 80px;
 }
@@ -599,7 +599,7 @@ footer {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 .contact-form .container .contact-message {
@@ -629,18 +629,18 @@ footer {
   padding-bottom: 20px;
 }
 
-.contact-form .container form .form-element-container:nth-child(2){
+.contact-form .container form .form-element-container:nth-child(2) {
   padding-bottom: 18px;
 }
 
-.contact-form .container form .form-element-container:nth-child(3){
+.contact-form .container form .form-element-container:nth-child(3) {
   padding-bottom: 22px;
 }
 
 .contact-form .container form .form-element {
   width: 100%;
   padding: 15px 38px 15px 16px;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   outline: none;
@@ -831,5 +831,4 @@ footer {
     background-repeat: no-repeat;
     background-size: 100% 91%;
   }
-
 }
