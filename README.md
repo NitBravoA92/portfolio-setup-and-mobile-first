@@ -106,6 +106,12 @@ This will show you a log with details about errors (if any) and changes that wou
 - Twitter: [@softwareDevOne](https://twitter.com/softwareDevOne)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/nitcelis-bravo-alcala-b65340158)
 
+👤 **Syeda Masuma Fatima**
+
+- GitHub: [@MasumaJaffery](https://github.com/MasumaJaffery)
+- Twitter: [@MasumaJaffery](https://twitter.com/MasumaJaffery)
+- LinkedIn: [Masuma Jaffery](https://www.linkedin.com/in/masuma-jaffery-797a29256/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
