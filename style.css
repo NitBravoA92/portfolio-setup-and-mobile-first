@@ -821,4 +821,15 @@ footer {
     padding: 12px;
     gap: 12px;
   }
+
+  .contact-form .section-mobile-shape {
+    left: 0;
+    right: 0;
+    top: 0;
+    background-image: url('./img/contact-form-desktop-shapes-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 91%;
+  }
+
 }
