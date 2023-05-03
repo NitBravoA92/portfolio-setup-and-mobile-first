@@ -715,6 +715,7 @@ footer {
 
   .headline-section {
     max-width: 100%;
+    min-height: 768px;
     padding-top: 135px;
   }
 
@@ -724,12 +725,42 @@ footer {
 
   .headline-section .section-mobile-bg {
     background-image: url('./img/header-background-desktop.png');
+    background-position: top left;
+    background-size: 100% 100%;
   }
 
   .headline-section .section-mobile-shape {
     background-image: url('./img/header-shapes-desktop.png');
     top: 0;
-    height: 721px;
+    height: 722px;
+    background-position: center right;
+    background-size: 95%;
+  }
+
+  .main-greeting {
+    width: 100%;
+    font-size: 48px;
+    line-height: 60px;
+    color: #091e42;
+    letter-spacing: 0.37px;
+  }
+
+  .main-message {
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 14px;
+  }
+
+  .connect-message {
+    padding-top: 10px;
   }
 
   .work-section .container.projects-list {
