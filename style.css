@@ -665,6 +665,11 @@ footer {
   font-size: 15px;
   line-height: 24px;
   color: #b3bac5;
+  transition: transform .5s ease-in-out;
+}
+
+.contact-form .container form .form-element:hover::placeholder {
+  transform: translate(20px, 0);
 }
 
 .contact-form .container form input:valid,
