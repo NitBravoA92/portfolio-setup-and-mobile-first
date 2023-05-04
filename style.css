@@ -101,6 +101,16 @@ header {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
+  animation: rotatee 5s alternate ease-in-out 1s ;
+}
+
+@keyframes rotatee {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .navbar {
