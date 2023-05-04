@@ -336,20 +336,13 @@ header {
 }
 
 .work-section .projects-list .project .details .technologies-tags {
-  gap: 0.5rem;
-  display: inline-flex;
-  float: left;
-}
-
-/*
-.work-section .projects-list .project .details .technologies-tags {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   padding: 0;
   gap: 8px;
 }
-*/
 
 .skills-list-box .skill-item .content .skills-details li {
   width: 100%;
@@ -370,6 +363,10 @@ header {
   padding: 4px 12px;
   background-color: #ebebff;
   border-radius: 8px;
+}
+
+.work-section .projects-list .project .details .technologies-tags li.desktop {
+  display: none;
 }
 
 .skills-list-box .skill-item .title button span {
@@ -682,6 +679,14 @@ footer {
   background-color: #0d151e;
 }
 
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: inline-block;
+}
+
 @media only screen and (min-width: 768px) {
   .btn-mobile-menu {
     display: none;
@@ -715,6 +720,7 @@ footer {
 
   .headline-section {
     max-width: 100%;
+    min-height: 800px;
     padding-top: 135px;
   }
 
@@ -724,25 +730,65 @@ footer {
 
   .headline-section .section-mobile-bg {
     background-image: url('./img/header-background-desktop.png');
+    background-position: top left;
+    background-size: 100% 100%;
   }
 
   .headline-section .section-mobile-shape {
     background-image: url('./img/header-shapes-desktop.png');
-    top: 0;
-    height: 721px;
+    top: 50px;
+    left: 10px;
+    height: 722px;
+    background-position: center center;
+    background-size: 95%;
+  }
+
+  .main-greeting {
+    width: 100%;
+    font-size: 48px;
+    line-height: 60px;
+    color: #091e42;
+    letter-spacing: 0.37px;
+  }
+
+  .main-message {
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .connect-message {
+    padding-top: 10px;
   }
 
   .work-section .container.projects-list {
     grid-auto-rows: minmax(496px, auto);
+    grid-row-gap: 142px;
+    padding-top: 142px;
+    padding-bottom: 142px;
+    padding-left: calc(24px + 8.2vw);
+    padding-right: calc(24px + 8.2vw);
   }
 
   .work-section .container.projects-list .project {
-    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 12px;
+    gap: 22px;
     padding: 24px;
     border-radius: 24px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .work-section .container.projects-list .project:hover {
+    filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
+  }
+
+  .work-section .container.projects-list .project:nth-child(odd) {
+    flex-direction: row;
+  }
+
+  .work-section .container.projects-list .project:nth-child(even) {
+    flex-direction: row-reverse;
   }
 
   .work-section .projects-list .project .preview-image {
@@ -784,24 +830,57 @@ footer {
     font-size: 16px;
   }
 
-  .about-myself-section .container {
-    max-width: 767px;
-    width: 100%;
-    flex-direction: row;
-    padding: 166px 24px;
+  .work-section .projects-list .project .details .technologies-tags li.desktop {
+    display: inline-block;
   }
 
-  .about-myself-section .about-me,
+  .about-myself-section {
+    padding-bottom: 0;
+  }
+
+  .about-myself-section .section-mobile-bg {
+    background-image: url('./img/about-myself-background-desktop.png');
+    background-size: 100% 100%;
+  }
+
+  .about-myself-section .container {
+    width: 100%;
+    flex-direction: row;
+    gap: 36px;
+    padding-top: 166px;
+    padding-bottom: 166px;
+    padding-left: calc(24px + 8.3vw);
+    padding-right: calc(24px + 8.3vw);
+  }
+
+  .about-myself-section .about-me {
+    width: 40%;
+    padding-top: 12px;
+  }
+
+  .about-myself-section .section-title {
+    font-size: 40px;
+    color: #091e42;
+  }
+
+  .about-myself-section .about-me-message {
+    padding: 0;
+  }
+
   .about-myself-section .tech-skills {
-    width: 50%;
+    width: 60%;
   }
 
   .skills-list-box {
     margin: 0;
   }
 
-  .about-myself-section .about-me {
-    padding-top: 12px;
+  .skills-list-box .skill-item .title {
+    padding: 24px;
+  }
+
+  .skills-list-box .skill-item.active .content {
+    padding: 12px 0;
   }
 
   .skills-list-box .skill-item .content .skills-details {
@@ -822,6 +901,10 @@ footer {
     gap: 12px;
   }
 
+  .contact-form .container {
+    padding: 142px 24px 127px 24px;
+  }
+
   .contact-form .section-mobile-shape {
     left: 0;
     right: 0;
@@ -829,6 +912,35 @@ footer {
     background-image: url('./img/contact-form-desktop-shapes-bg.png');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100% 91%;
+    background-size: 90%;
+  }
+
+  .contact-form .container .section-title {
+    max-width: 801px;
+  }
+
+  .contact-form .container .contact-message {
+    max-width: 569px;
+  }
+
+  .contact-form .container form {
+    max-width: 447px;
+  }
+
+  .contact-form .container form .form-element-container:last-child {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-form .container .divider-container {
+    display: none;
+  }
+
+  .desktop {
+    display: inline-block;
+  }
+
+  .mobile {
+    display: none;
   }
 }
