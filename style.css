@@ -731,7 +731,7 @@ footer {
 
   .headline-section {
     max-width: 100%;
-    min-height: 768px;
+    min-height: 800px;
     padding-top: 135px;
   }
 
@@ -747,9 +747,10 @@ footer {
 
   .headline-section .section-mobile-shape {
     background-image: url('./img/header-shapes-desktop.png');
-    top: 0;
+    top: 50px;
+    left: 10px;
     height: 722px;
-    background-position: center right;
+    background-position: center center;
     background-size: 95%;
   }
 
