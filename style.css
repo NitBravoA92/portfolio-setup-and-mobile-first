@@ -72,11 +72,11 @@ body {
 }
 
 .desktop {
-  display: none;
+  display: none !important;
 }
 
 .mobile {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 header {
@@ -693,11 +693,11 @@ footer {
 @media only screen and (min-width: 768px) {
 
   .desktop {
-    display: inline-block;
+    display: inline-block !important;
   }
 
   .mobile {
-    display: none;
+    display: none !important;
   }
 
   .btn-mobile-menu {
