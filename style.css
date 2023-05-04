@@ -736,6 +736,12 @@ footer {
     text-align: center;
     padding: 10px 12px;
     color: #344563;
+    transition: color .3s linear;
+  }
+
+  .navbar-menu li a:hover
+  {
+    color: rgb(96, 112, 255);
   }
 
   .headline-section {
