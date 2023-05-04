@@ -71,6 +71,49 @@ body {
   border-radius: 50%;
 }
 
+.move-right-animation {
+  transform: translateX(0%);
+  animation: moveRight 1s alternate ease-out;
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.move-down-animation {
+  animation: moveDown 0.5s alternate ease-out;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.move-up-animation {
+  animation: moveUp 0.5s alternate ease-out;
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
 header {
   position: fixed;
   top: 0;
@@ -101,6 +144,17 @@ header {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
+  animation: rotatee 5s alternate ease-in-out 1s;
+}
+
+@keyframes rotatee {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .navbar {
@@ -166,6 +220,7 @@ header {
   align-items: flex-start;
   padding: 114px 24px;
   gap: 12px;
+  overflow: hidden;
 }
 
 .headline-section .section-mobile-bg {
@@ -203,6 +258,7 @@ header {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
+  overflow: hidden;
 }
 
 .main-message {
@@ -219,6 +275,7 @@ header {
   align-items: flex-start;
   padding: 0;
   gap: 14px;
+  overflow: hidden;
 }
 
 .connect-message {
@@ -235,6 +292,14 @@ header {
   flex-direction: row;
   align-items: center;
   gap: 16px;
+}
+
+.social-media-links a img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.social-media-links a img:hover {
+  transform: scale(1.2);
 }
 
 .work-section {
@@ -280,6 +345,11 @@ header {
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
+  transition: transform 0.6s ease-in-out;
+}
+
+.work-section .projects-list .project .preview-image img:hover {
+  transform: scale(1.05);
 }
 
 .work-section .projects-list .project .details {
@@ -655,6 +725,11 @@ footer {
   font-size: 15px;
   line-height: 24px;
   color: #b3bac5;
+  transition: transform 0.5s ease-in-out;
+}
+
+.contact-form .container form .form-element:hover::placeholder {
+  transform: translate(20px, 0);
 }
 
 .contact-form .container form input:valid,
@@ -716,6 +791,11 @@ footer {
     text-align: center;
     padding: 10px 12px;
     color: #344563;
+    transition: color 0.3s linear;
+  }
+
+  .navbar-menu li a:hover {
+    color: rgb(96, 112, 255);
   }
 
   .headline-section {
