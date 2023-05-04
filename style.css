@@ -71,14 +71,6 @@ body {
   border-radius: 50%;
 }
 
-.desktop {
-  display: none !important;
-}
-
-.mobile {
-  display: inline-block !important;
-}
-
 header {
   position: fixed;
   top: 0;
@@ -371,6 +363,10 @@ header {
   padding: 4px 12px;
   background-color: #ebebff;
   border-radius: 8px;
+}
+
+.work-section .projects-list .project .details .technologies-tags li.desktop {
+  display: none;
 }
 
 .skills-list-box .skill-item .title button span {
@@ -683,15 +679,15 @@ footer {
   background-color: #0d151e;
 }
 
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: inline-block;
+}
+
 @media only screen and (min-width: 768px) {
-  .desktop {
-    display: inline-block !important;
-  }
-
-  .mobile {
-    display: none !important;
-  }
-
   .btn-mobile-menu {
     display: none;
   }
@@ -834,6 +830,10 @@ footer {
     font-size: 16px;
   }
 
+  .work-section .projects-list .project .details .technologies-tags li.desktop {
+    display: inline-block;
+  }
+
   .about-myself-section {
     padding-bottom: 0;
   }
@@ -933,6 +933,14 @@ footer {
   }
 
   .contact-form .container .divider-container {
+    display: none;
+  }
+
+  .desktop {
+    display: inline-block;
+  }
+
+  .mobile {
     display: none;
   }
 }
