@@ -290,6 +290,11 @@ header {
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
+  transition: transform .6s ease-in-out;
+}
+
+.work-section .projects-list .project .preview-image img:hover { 
+  transform: scale(1.05);
 }
 
 .work-section .projects-list .project .details {
