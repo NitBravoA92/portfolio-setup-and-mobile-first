@@ -691,7 +691,6 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-
   .desktop {
     display: inline-block !important;
   }
@@ -791,7 +790,7 @@ footer {
   }
 
   .work-section .container.projects-list .project:hover {
-    filter: drop-shadow(0px 48px 48px rgba(37, 47, 137, 0.08));
+    filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
   }
 
   .work-section .container.projects-list .project:nth-child(odd) {
@@ -849,7 +848,7 @@ footer {
     background-image: url('./img/about-myself-background-desktop.png');
     background-size: 100% 100%;
   }
-  
+
   .about-myself-section .container {
     width: 100%;
     flex-direction: row;
