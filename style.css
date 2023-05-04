@@ -908,6 +908,10 @@ footer {
     gap: 12px;
   }
 
+  .contact-form .container {
+    padding: 142px 24px 127px 24px;
+  }
+
   .contact-form .section-mobile-shape {
     left: 0;
     right: 0;
@@ -915,6 +919,27 @@ footer {
     background-image: url('./img/contact-form-desktop-shapes-bg.png');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100% 91%;
+    background-size: 90%;
+  }
+
+  .contact-form .container .section-title {
+    max-width: 801px;
+  }
+
+  .contact-form .container .contact-message {
+    max-width: 569px;
+  }
+
+  .contact-form .container form {
+    max-width: 447px;
+  }
+
+  .contact-form .container form .form-element-container:last-child {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-form .container .divider-container {
+    display: none;
   }
 }
