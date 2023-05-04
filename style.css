@@ -344,20 +344,13 @@ header {
 }
 
 .work-section .projects-list .project .details .technologies-tags {
-  gap: 0.5rem;
-  display: inline-flex;
-  float: left;
-}
-
-/*
-.work-section .projects-list .project .details .technologies-tags {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   padding: 0;
   gap: 8px;
 }
-*/
 
 .skills-list-box .skill-item .content .skills-details li {
   width: 100%;
