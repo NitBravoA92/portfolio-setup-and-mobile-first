@@ -841,24 +841,53 @@ footer {
     font-size: 16px;
   }
 
-  .about-myself-section .container {
-    max-width: 767px;
-    width: 100%;
-    flex-direction: row;
-    padding: 166px 24px;
+  .about-myself-section {
+    padding-bottom: 0;
   }
 
-  .about-myself-section .about-me,
+  .about-myself-section .section-mobile-bg {
+    background-image: url('./img/about-myself-background-desktop.png');
+    background-size: 100% 100%;
+  }
+  
+  .about-myself-section .container {
+    width: 100%;
+    flex-direction: row;
+    gap: 36px;
+    padding-top: 166px;
+    padding-bottom: 166px;
+    padding-left: calc(24px + 8.3vw);
+    padding-right: calc(24px + 8.3vw);
+  }
+
+  .about-myself-section .about-me {
+    width: 40%;
+    padding-top: 12px;
+  }
+
+  .about-myself-section .section-title {
+    font-size: 40px;
+    color: #091e42;
+  }
+
+  .about-myself-section .about-me-message {
+    padding: 0;
+  }
+
   .about-myself-section .tech-skills {
-    width: 50%;
+    width: 60%;
   }
 
   .skills-list-box {
     margin: 0;
   }
 
-  .about-myself-section .about-me {
-    padding-top: 12px;
+  .skills-list-box .skill-item .title {
+    padding: 24px;
+  }
+
+  .skills-list-box .skill-item.active .content {
+    padding: 12px 0;
   }
 
   .skills-list-box .skill-item .content .skills-details {
