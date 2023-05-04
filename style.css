@@ -774,15 +774,27 @@ footer {
 
   .work-section .container.projects-list {
     grid-auto-rows: minmax(496px, auto);
+    grid-row-gap: 142px;
+    padding-top: 142px;
+    padding-bottom: 142px;
+    padding-left: calc(24px + 8.2vw);
+    padding-right: calc(24px + 8.2vw);
   }
 
   .work-section .container.projects-list .project {
-    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 12px;
+    gap: 22px;
     padding: 24px;
     border-radius: 24px;
+  }
+  
+  .work-section .container.projects-list .project:nth-child(odd) {
+    flex-direction: row;
+  }
+
+  .work-section .container.projects-list .project:nth-child(even) {
+    flex-direction: row-reverse;
   }
 
   .work-section .projects-list .project .preview-image {
