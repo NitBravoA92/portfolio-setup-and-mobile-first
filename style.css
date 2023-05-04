@@ -71,6 +71,14 @@ body {
   border-radius: 50%;
 }
 
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: inline-block;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -683,6 +691,15 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+
+  .desktop {
+    display: inline-block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
   .btn-mobile-menu {
     display: none;
   }
