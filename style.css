@@ -247,6 +247,14 @@ header {
   gap: 16px;
 }
 
+.social-media-links a img {
+  transition: transform .5s ease-in-out;
+}
+
+.social-media-links a img:hover {
+  transform: scale(1.2);
+}
+
 .work-section {
   width: 100%;
   position: relative;
