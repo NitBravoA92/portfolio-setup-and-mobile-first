@@ -8,6 +8,8 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -45,6 +47,13 @@
 - **Use of semantic HTML in the code structure**
 - **Combination of the Grid and Flebox system to build the layout**
 - **Client side form Validations**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+To see the project working live, you can click on the following link that contains the demo version:
+- [Live Demo Link](https://nitbravoa92.github.io/portfolio-setup-and-mobile-first)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
