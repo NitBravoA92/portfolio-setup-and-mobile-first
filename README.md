@@ -27,7 +27,7 @@
 **Portfolio: Desktop version** It is a project made with HTML and CSS, which consists of the mobile and desktop design of a Professional Web Portfolio. This project is focused on testing the skills for web layout using the mobile-first approach.
 
 The following link is a video presentation of the project. In this video I explained the details of the project, the main sections, the challenges and contributions that the project left in me. You will also be able to learn about what the future of the project will be.
-- [Presentation of the Project](https://www.loom.com/share/b33f672516a44d0fbc2fb00b1698ca25)
+- [Presentation of the Project](https://www.loom.com/share/10a78a3677ad4b28b10a114cba3d1aa2)
 
 ## 🛠 Built With <a name="built-with"></a>
 
