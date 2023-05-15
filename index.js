@@ -1,5 +1,4 @@
 const menuBtn = document.getElementById("open-mobile-menu");
-const overlay = document.getElementById("overlay");
 const menu = document.getElementById('mobile-menu');
 const btnClose = document.getElementById('close-btn');
 
@@ -7,7 +6,6 @@ function navToggle() {
     menu.classList.remove('hide-menu')
     menu.classList.toggle('show-menu');
     menuBtn.classList.toggle('open');
-    overlay.classList.toggle('overlay-show');
 }
 
 function closeMobileNav() {
