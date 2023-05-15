@@ -115,7 +115,6 @@ body {
 }
 
 /* Mobile Menu*/
-
 .mobile-main-menu {
   position: fixed;
   width: 100%;
@@ -134,12 +133,6 @@ body {
 .hide-menu {
   display: none;
 }
-
-/* .overlay-show {
-  width: 100%;
-  height: 100%;
-  background: blue;
-} */
 
 header {
   position: fixed;
