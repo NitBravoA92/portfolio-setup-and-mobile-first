@@ -118,7 +118,8 @@ body {
   }
 }
 
-/* Mobile Menu*/
+/* Mobile Menu */
+
 .mobile-main-menu {
   position: fixed;
   width: 100%;
@@ -161,7 +162,7 @@ body {
 
 .mobile-main-menu .menu-list li a {
   width: 100%;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
