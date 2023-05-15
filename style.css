@@ -114,6 +114,33 @@ body {
   }
 }
 
+/* Mobile Menu*/
+
+.mobile-main-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  display: flex;
+  border: 1px solid black;
+  background-color: yellow;
+  display: none;
+}
+
+.show-menu {
+  display: block;
+}
+
+.hide-menu {
+  display: none;
+}
+
+/* .overlay-show {
+  width: 100%;
+  height: 100%;
+  background: blue;
+} */
+
 header {
   position: fixed;
   top: 0;
