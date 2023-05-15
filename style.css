@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   background-color: #fff;
