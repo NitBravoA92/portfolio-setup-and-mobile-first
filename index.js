@@ -100,35 +100,38 @@ for(let i=0; i < projectData.length; i++) {
   displayCards(i);
 }
 
-/*
+
 const btnProjectDetails = document.querySelectorAll('.btn-project-details');
 btnProjectDetails.forEach((btnElement, index) => {
   btnElement.addEventListener('click', function(event) {
     const modalWindow = document.querySelector("#details-popup-window");
     modalWindow.innerHTML = `
-    <div id="overlay-modal-bg"></div>
-    <div class="main-modal">
-    <div class="modal-header">
-        <div class="modal-title">
-            <h3 class="title">${projectData[index].title}</h3> 
-            <button type="button" class="btn-close-modal">X</button>
-        </div>
-        <div class="modal-client-details">
-            <ul>
-                <li>${projectData[index].client_info[0]}</li>
-                <li>${projectData[index].client_info[1]}</li>
-                <li>${projectData[index].client_info[2]}</li>
-            </ul>
-        </div>
-        <div class="modal-image">
-            <img src="${projectData[index].image}" alt="Project screenshot" class="image screenshot">
-        </div>
-    </div>
-    <div class="modal-details">
+    <div class="modal-content">
+      <div class="modal-header">
+          <div class="modal-title">
+              <h3 class="title">${projectData[index].title}</h3> 
+              <button type="button" class="btn-close-modal">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" fill="#67798E"/>
+              </svg>
+              </button>
+          </div>
+          <div class="modal-client-details">
+              <ul>
+                  <li>${projectData[index].client_info[0]}</li>
+                  <li>${projectData[index].client_info[1]}</li>
+                  <li>${projectData[index].client_info[2]}</li>
+              </ul>
+          </div>
+          <div class="modal-image">
+              <img src="${projectData[index].image}" alt="Project screenshot" class="image screenshot">
+          </div>
+      </div>
+      <div class="modal-details">
         <p class="modal-description">
           ${projectData[index].description}
         </p>
-        <div class="modal-skills-footer-btns">
+        <div class="modal-skills- modal-footer-buttons">
             <ul>
                 <li>${projectData[index].skills[0]}</li>
                 <li>${projectData[index].skills[1]}</li>
@@ -139,9 +142,12 @@ btnProjectDetails.forEach((btnElement, index) => {
                 <a href="${projectData[index].source}" class="">See source</a>
             </div>
         </div>
-    </div>
+      </div>
 </div>
 `;
-  });
+modalWindow.classList.remove('hidden');
+modalWindow.classList.add('show');
+
 });
-*/
+
+});
