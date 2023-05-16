@@ -93,7 +93,7 @@ function displayCards(id) {
           <li><span>${projectData[id].skills[2]}</span></li>
         </ul>
         <div class="see-more-details">
-          <button type="button" class="btn btn-bordered btn-white-bg btn-blue-text">See Project</button>
+          <button type="button" class="btn btn-project-details btn-bordered btn-white-bg btn-blue-text">See Project</button>
         </div>
       </div>
     </article>
@@ -103,3 +103,47 @@ function displayCards(id) {
 for(let i=0; i < projectData.length; i++) {
   displayCards(i)
 }
+
+const btnProjectDetails = document.querySelectorAll('.btn-project-details');
+btnProjectDetails.forEach((btnElement, index) => {
+  btnElement.addEventListener('click', function(event) {
+    const modalWindow = document.querySelector("#details-popup-window");
+    modalWindow.innerHTML = `
+    <div id="overlay-modal-bg"></div>
+    <div class="main-modal">
+    <div class="modal-header">
+        <div class="modal-title">
+            <h3 class="title">${projectData[index].title}</h3> 
+            <button type="button" class="btn-close-modal">X</button>
+        </div>
+        <div class="modal-client-details">
+            <ul>
+                <li>${projectData[index].client_info[0]}</li>
+                <li>${projectData[index].client_info[1]}</li>
+                <li>${projectData[index].client_info[2]}</li>
+            </ul>
+        </div>
+        <div class="modal-image">
+            <img src="${projectData[index].image}" alt="Project screenshot" class="image screenshot">
+        </div>
+    </div>
+    <div class="modal-details">
+        <p class="modal-description">
+          ${projectData[index].description}
+        </p>
+        <div class="modal-skills-footer-btns">
+            <ul>
+                <li>${projectData[index].skills[0]}</li>
+                <li>${projectData[index].skills[1]}</li>
+                <li>${projectData[index].skills[2]}</li>
+            </ul>
+            <div class="modal-btns-lives">
+                <a href="${projectData[index].livelink}" class="">See live</a>
+                <a href="${projectData[index].source}" class="">See source</a>
+            </div>
+        </div>
+    </div>
+</div>
+`;
+  });
+});
