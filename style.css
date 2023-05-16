@@ -837,6 +837,54 @@ footer {
   display: inline-block;
 }
 
+.modal-window {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(193, 199, 208, 0.8);
+  padding: 50px 16px 8px 16px;
+}
+
+.modal-window.show {
+  display: block;
+}
+
+.modal-window.hidden {
+  display: none;
+}
+
+.modal-content {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  border: 1px solid #DFE1E6;
+  border-radius: 16px;
+  padding: 18px 16px 20px 16px;
+}
+
+.modal-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-close-modal {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 6px 8px;
+}
+
 @media only screen and (min-width: 768px) {
   .btn-mobile-menu {
     display: none;
