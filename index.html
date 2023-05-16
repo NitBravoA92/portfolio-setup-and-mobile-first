@@ -9,18 +9,35 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div id="mobile-menu" class="mobile-main-menu">
+      <div class="close-button-container">
+        <button type="button" id="close-btn" class="close-mobile-menu-btn">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" fill="white"/>
+          </svg>
+        </button>
+      </div>
+      <ul class="menu-list">
+        <li><a class="mobile-nav-link" href="#works">Portfolio</a></li>
+        <li><a class="mobile-nav-link" href="#about-myself">About</a></li>
+        <li><a class="mobile-nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <div class="divider-container mobile-bottom-line">
+        <span class="divider"></span>
+      </div>
+    </div>
     <header>
       <div class="logo-container">
         <a href="index.html" class="logo">My Logo</a>
       </div>
       <nav class="navbar">
         <ul class="navbar-menu">
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#works">Portfolio</a></li>
+          <li><a href="#about-myself">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <button type="button" class="btn-mobile-menu">
+      <button type="button" class="btn-mobile-menu" id="open-mobile-menu">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M11 15C11 14.4477 11.4477 14 12 14H28C28.5523 14 29 14.4477 29 15C29 15.5523 28.5523 16 28 16H12C11.4477 16 11 15.5523 11 15ZM11 20C11 19.4477 11.4477 19 12 19L28 19C28.5523 19 29 19.4477 29 20C29 20.5523 28.5523 21 28 21L12 21C11.4477 21 11 20.5523 11 20ZM12 24C11.4477 24 11 24.4477 11 25C11 25.5523 11.4477 26 12 26H28C28.5523 26 29 25.5523 29 25C29 24.4477 28.5523 24 28 24H12Z" fill="#6070FF"/>
         </svg>
@@ -50,7 +67,7 @@
             </div>
           </div>
       </section>
-      <section class="work-section">
+      <section class="work-section" id="works">
         <div class="container projects-list">
           <article class="project">
             <div class="preview-image">
@@ -168,7 +185,7 @@
           </article>
         </div>
       </section>
-      <section class="about-myself-section">
+      <section class="about-myself-section" id="about-myself">
         <div class="section-mobile-bg"></div>
         <div class="container">
           <div class="about-me">
@@ -254,7 +271,7 @@
       </section>
     </main>
     <footer>
-      <section class="contact-form">
+      <section class="contact-form" id="contact">
         <div class="section-mobile-shape"></div>
         <div class="container">
           <h2 class="section-title">Contact me</h2>
@@ -282,5 +299,6 @@
         </div>
       </section>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
