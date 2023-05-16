@@ -24,56 +24,52 @@ menuLinks.forEach((navLink) => {
 // Project Data
 const projectData = [
   {
-    image: 'img/tonic-01.png',
+    image: './img/tonic-01.png',
     title: 'Tonic',
     client_info: ['canopy', 'Back End Dev', '2015'],
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'css', 'javascript'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     source: 'https://github.com/over-geek/Portfolio-website2',
     livelink: 'https://over-geek.github.io/overgeek.github.io/',
   },
   {
-    image: 'img/multi-post-stories-01.png',
-    title: 'Tonic',
-    client_info: ['canopy', 'Back End Dev', '2015'],
+    image: './img/multi-post-stories-01.png',
+    title: 'Multi-Post Stories',
+    client_info: ['CANOPY', 'Back End Dev', '2015'],
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'css', 'javascript'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     source: 'https://github.com/over-geek/Portfolio-website2',
     livelink: 'https://over-geek.github.io/overgeek.github.io/',
   },
   {
-    image: 'img/tonic-02.png',
+    image: './img/tonic-02.png',
     title: 'Tonic',
-    client_info: ['canopy', 'Back End Dev', '2015'],
+    client_info: ['CANOPY', 'Back End Dev', '2015'],
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'css', 'javascript'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    source: 'https://github.com/NitBravoA92/portfolio-setup-and-mobile-first',
-    livelink: 'https://nitbravoa92.github.io/portfolio-setup-and-mobile-first/',
+    source: 'https://github.com/over-geek/Portfolio-website2',
+    livelink: 'https://over-geek.github.io/overgeek.github.io/',
   },
   {
-    image: 'img/multi-post-stories-02.png',
-    title: 'Tonic',
-    client_info: ['canopy', 'Back End Dev', '2015'],
+    image: './img/multi-post-stories-02.png',
+    title: 'Multi-Post Stories',
+    client_info: ['CANOPY', 'Back End Dev', '2015'],
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'css', 'javascript'],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     source: 'https://github.com/over-geek/Portfolio-website2',
     livelink: 'https://over-geek.github.io/overgeek.github.io/',
   }
-]
+];
 
-// Render Prject Cards
+
+// Render Project Cards
 const projectCard = document.querySelector('.projects-list');
 
 function displayCards(id) {
   projectCard.innerHTML += `
     <article class="project">
       <div class="preview-image">
-        <img src="${projectData[id].img}" alt="Tonic project preview image" class="mobile" />
-        <img src="./img/tonic-desktop.png" alt="Tonic project preview image" class="desktop" />
+        <img src="${projectData[id].image}" alt="${projectData[id].title} project preview image" />
       </div>
       <div class="details">
         <h3 class="name">${projectData[id].title}</h3>
@@ -101,9 +97,10 @@ function displayCards(id) {
 }
 
 for(let i=0; i < projectData.length; i++) {
-  displayCards(i)
+  displayCards(i);
 }
 
+/*
 const btnProjectDetails = document.querySelectorAll('.btn-project-details');
 btnProjectDetails.forEach((btnElement, index) => {
   btnElement.addEventListener('click', function(event) {
@@ -147,3 +144,4 @@ btnProjectDetails.forEach((btnElement, index) => {
 `;
   });
 });
+*/
