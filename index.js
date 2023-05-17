@@ -166,3 +166,16 @@ modalWindow.addEventListener('click', (e) => {
     modalWindow.classList.add('hidden');
   }
 });
+
+// form validation
+const contactForm = document.querySelector('#contact-me-form');
+contactForm.addEventListener('submit', function(event) {
+  const inputEmailValue = document.querySelector('#user-email').value;
+  const emailValueLowerCase = inputEmailValue.toLowerCase();
+  const errorMessage = document.querySelector('#errormessage');
+  errorMessage.style.display = 'none';
+  if(inputEmailValue !== emailValueLowerCase) {
+    event.preventDefault();
+    errorMessage.style.display = 'block';
+  }
+});
