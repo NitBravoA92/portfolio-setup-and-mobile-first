@@ -24,7 +24,7 @@ menuLinks.forEach((navLink) => {
 // Project Data
 const projectData = [
   {
-    image: './img/tonic-01.png',
+    image: './img/facebook-360-desktop.png',
     title: 'Tonic',
     client_info: ['canopy', 'Back End Dev', '2015'],
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -33,7 +33,7 @@ const projectData = [
     livelink: 'https://over-geek.github.io/overgeek.github.io/',
   },
   {
-    image: './img/multi-post-stories-01.png',
+    image: './img/uber-navigation.png',
     title: 'Multi-Post Stories',
     client_info: ['CANOPY', 'Back End Dev', '2015'],
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -51,7 +51,7 @@ const projectData = [
     livelink: 'https://over-geek.github.io/overgeek.github.io/',
   },
   {
-    image: './img/multi-post-stories-02.png',
+    image: './img/multi-post-stories-desktop.png',
     title: 'Multi-Post Stories',
     client_info: ['CANOPY', 'Back End Dev', '2015'],
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
