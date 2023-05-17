@@ -887,6 +887,50 @@ footer {
   padding: 6px 8px;
 }
 
+.modal-client-role-details {
+  margin-bottom: 20px;
+}
+
+.modal-client-role-details .developer-role {
+  padding-top: 10px;
+}
+
+.modal-image img {
+  width: 100%;
+}
+
+.modal-details .description {
+  padding: 12px 0;
+}
+
+.modal-skills-footer .technologies-tags {
+  width: 100%;
+  border-bottom: 1px solid #EBECF0;
+  padding-bottom: 25px;
+  padding-top: 8px;
+  margin-bottom: 35px;
+}
+
+.modal-footer-buttons {
+  width: 100%;
+}
+
+.modal-footer-buttons {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.modal-footer-buttons a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+}
+
 @media only screen and (min-width: 768px) {
   .btn-mobile-menu {
     display: none;
