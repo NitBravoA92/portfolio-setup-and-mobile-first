@@ -1181,6 +1181,11 @@ footer {
     display: flex;
     justify-content: center;
   }
+  
+  .contact-form #errormessage { 
+    display: none;
+    color: red;
+  }
 
   .modal-window .divider-container {
     display: none;
