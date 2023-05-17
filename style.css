@@ -837,6 +837,11 @@ footer {
   background-color: #eafaee;
 }
 
+.contact-form #errormessage { 
+  display: none;
+  color: red;
+}
+
 .modal-window {
   width: 100%;
   height: 100vh;
@@ -1180,11 +1185,6 @@ footer {
   .contact-form .container form .form-element-container:last-child {
     display: flex;
     justify-content: center;
-  }
-  
-  .contact-form #errormessage { 
-    display: none;
-    color: red;
   }
 
   .modal-window .divider-container {
