@@ -1,68 +1,68 @@
-const menuBtn = document.getElementById("open-mobile-menu");
-const menu = document.getElementById("mobile-menu");
-const btnClose = document.getElementById("close-btn");
-const menuLinks = document.querySelectorAll(".mobile-nav-link");
+const menuBtn = document.getElementById('open-mobile-menu');
+const menu = document.getElementById('mobile-menu');
+const btnClose = document.getElementById('close-btn');
+const menuLinks = document.querySelectorAll('.mobile-nav-link');
 
 function navToggle() {
-  menu.classList.remove("hide-menu");
-  menu.classList.add("show-menu");
-  menuBtn.classList.add("open");
+  menu.classList.remove('hide-menu');
+  menu.classList.add('show-menu');
+  menuBtn.classList.add('open');
 }
 
 function closeMobileNav() {
-  menu.classList.add("hide-menu");
-  menu.classList.remove("show-menu");
-  menuBtn.classList.remove("open");
+  menu.classList.add('hide-menu');
+  menu.classList.remove('show-menu');
+  menuBtn.classList.remove('open');
 }
 
-btnClose.addEventListener("click", closeMobileNav);
-menuBtn.addEventListener("click", navToggle);
+btnClose.addEventListener('click', closeMobileNav);
+menuBtn.addEventListener('click', navToggle);
 menuLinks.forEach((navLink) => {
-  navLink.addEventListener("click", closeMobileNav);
+  navLink.addEventListener('click', closeMobileNav);
 });
 
 // Project Data
 const projectData = [
   {
-    image: "./img/tonic-01.png",
-    title: "Tonic",
-    client_info: ["canopy", "Back End Dev", "2015"],
-    text: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    skills: ["html", "css", "javascript"],
-    source: "https://github.com/over-geek/Portfolio-website2",
-    livelink: "https://over-geek.github.io/overgeek.github.io/",
+    image: './img/tonic-01.png',
+    title: 'Tonic',
+    client_info: ['canopy', 'Back End Dev', '2015'],
+    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    skills: ['html', 'css', 'javascript'],
+    source: 'https://github.com/over-geek/Portfolio-website2',
+    livelink: 'https://over-geek.github.io/overgeek.github.io/',
   },
   {
-    image: "./img/multi-post-stories-01.png",
-    title: "Multi-Post Stories",
-    client_info: ["CANOPY", "Back End Dev", "2015"],
-    text: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    skills: ["html", "css", "javascript"],
-    source: "https://github.com/over-geek/Portfolio-website2",
-    livelink: "https://over-geek.github.io/overgeek.github.io/",
+    image: './img/multi-post-stories-01.png',
+    title: 'Multi-Post Stories',
+    client_info: ['CANOPY', 'Back End Dev', '2015'],
+    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    skills: ['html', 'css', 'javascript'],
+    source: 'https://github.com/over-geek/Portfolio-website2',
+    livelink: 'https://over-geek.github.io/overgeek.github.io/',
   },
   {
-    image: "./img/tonic-02.png",
-    title: "Tonic",
-    client_info: ["CANOPY", "Back End Dev", "2015"],
-    text: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    skills: ["html", "css", "javascript"],
-    source: "https://github.com/over-geek/Portfolio-website2",
-    livelink: "https://over-geek.github.io/overgeek.github.io/",
+    image: './img/tonic-02.png',
+    title: 'Tonic',
+    client_info: ['CANOPY', 'Back End Dev', '2015'],
+    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    skills: ['html', 'css', 'javascript'],
+    source: 'https://github.com/over-geek/Portfolio-website2',
+    livelink: 'https://over-geek.github.io/overgeek.github.io/',
   },
   {
-    image: "./img/multi-post-stories-02.png",
-    title: "Multi-Post Stories",
-    client_info: ["CANOPY", "Back End Dev", "2015"],
-    text: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    skills: ["html", "css", "javascript"],
-    source: "https://github.com/over-geek/Portfolio-website2",
-    livelink: "https://over-geek.github.io/overgeek.github.io/",
+    image: './img/multi-post-stories-02.png',
+    title: 'Multi-Post Stories',
+    client_info: ['CANOPY', 'Back End Dev', '2015'],
+    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    skills: ['html', 'css', 'javascript'],
+    source: 'https://github.com/over-geek/Portfolio-website2',
+    livelink: 'https://over-geek.github.io/overgeek.github.io/',
   },
 ];
 
 // Render Project Cards
-const projectCard = document.querySelector(".projects-list");
+const projectCard = document.querySelector('.projects-list');
 
 function displayCards(id) {
   projectCard.innerHTML += `
@@ -95,7 +95,7 @@ function displayCards(id) {
   `;
 }
 
-for (let i = 0; i < projectData.length; i++) {
+for (let i = 0; i < projectData.length; i += 1) {
   displayCards(i);
 }
 
@@ -103,7 +103,7 @@ const btnProjectDetails = document.querySelectorAll('.btn-project-details');
 const modalWindow = document.querySelector('#details-popup-window');
 
 btnProjectDetails.forEach((btnElement, index) => {
-  btnElement.addEventListener('click', function (event) {
+  btnElement.addEventListener('click', () => {
     modalWindow.innerHTML = `
     <div class="modal-content project">
       <div class="modal-header">
@@ -160,8 +160,8 @@ btnProjectDetails.forEach((btnElement, index) => {
   });
 });
 
-modalWindow.addEventListener('click', function (e) {
-  if(e.target.classList.contains('close-popup')) {
+modalWindow.addEventListener('click', (e) => {
+  if (e.target.classList.contains('close-popup')) {
     modalWindow.classList.remove('show');
     modalWindow.classList.add('hidden');
   }
