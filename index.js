@@ -139,11 +139,11 @@ btnProjectDetails.forEach((btnElement, index) => {
                 <li><span>${projectData[index].skills[2]}</span></li>
             </ul>
             <div class="modal-footer-buttons">
-                <a href="${projectData[index].livelink}" class="btn btn-bordered btn-white-bg btn-blue-text">
+                <a href="${projectData[index].livelink}" target="_blank" class="btn btn-bordered btn-white-bg btn-blue-text">
                   <span>See live</span>
                   <img src="./img/blue-export-icon.svg" alt="Blue Export icon" />
                 </a>
-                <a href="${projectData[index].source}" class="btn btn-bordered btn-white-bg btn-blue-text">
+                <a href="${projectData[index].source}" target="_blank" class="btn btn-bordered btn-white-bg btn-blue-text">
                   <span>See source</span>
                   <img src="./img/blue-github-icon.svg" alt="Blue Github icon" />
                 </a>
