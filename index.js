@@ -152,6 +152,9 @@ btnProjectDetails.forEach((btnElement, index) => {
         </div>
       </div>
 </div>
+<div class="divider-container">
+  <span class="divider"></span>
+</div>
 `;
 modalWindow.classList.remove('hidden');
 modalWindow.classList.add('show');
