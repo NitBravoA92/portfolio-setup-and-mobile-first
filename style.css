@@ -870,6 +870,26 @@ footer {
   border-radius: 16px;
   padding: 18px 16px 20px 16px;
   font-family: 'Poppins', sans-serif;
+  transform: scale(0);
+}
+
+.modal-window.show .modal-content {
+  transform: scale(1);
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-iteration-count: initial;
+  animation-direction: alternate;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
 }
 
 .modal-title {
