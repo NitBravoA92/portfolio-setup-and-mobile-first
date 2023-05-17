@@ -96,6 +96,8 @@ It is also important to have at least basic knowledge of HTML, CSS and Javascrip
 - [JavaScript basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
 - [JavaScript Tutorial](https://www.w3schools.com/js/)
 - [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+- [JavaScript Forms](https://www.w3schools.com/js/js_validation.asp)
+- [JavaScript Form Validation](https://www.javatpoint.com/javascript-form-validation)
 
 ### Install
 
@@ -138,6 +140,12 @@ This will show you a log with details about errors (if any) and changes that wou
 - Twitter: [@KissiKenneth](https://twitter.com/KissiKenneth)
 - LinkedIn: [Kenneth Agyare Kissi](https://www.linkedin.com/in/kenneth-agyare-kissi-673a01186/)
 
+👤 **Luis Renan Pavanello**
+
+- GitHub: [@luisrpavanelli](https://github.com/luisrpavanelli)
+- Twitter: [@luisrpavanello](https://twitter.com/luisrpavanello)
+- LinkedIn: [Luis Pavanello](https://www.linkedin.com/in/luisrpavanello/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
@@ -149,7 +157,8 @@ This will show you a log with details about errors (if any) and changes that wou
 - [x] **Create the mobile navigation menu**
 - [x] **Create the mobile version of a popup window to show the details of a project**
 - [x] **Create the desktop version of a popup window to show the details of a project**
-- [ ] **Add validations to the contact form using Javascript to optimize functionality**
+- [x] **Add validations to the contact form using Javascript to optimize functionality**
+- [ ] **Implement the persistence of Works section data using Local storage**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
