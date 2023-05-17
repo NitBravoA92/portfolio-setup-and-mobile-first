@@ -926,10 +926,9 @@ footer {
 
 .modal-footer-buttons a {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 10px;
-  padding: 12px 16px;
 }
 
 @media only screen and (min-width: 768px) {
