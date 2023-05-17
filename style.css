@@ -71,6 +71,7 @@ body {
 .dot {
   width: 8px;
   height: 8px;
+  display: inline-block;
   background-color: #c1c7d0;
   border-radius: 50%;
 }
@@ -181,6 +182,13 @@ body {
 
 .mobile-main-menu .menu-list li {
   width: 80%;
+}
+
+.modal-footer-buttons a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
 }
 
 .mobile-main-menu .menu-list li a {
@@ -385,12 +393,12 @@ header {
   gap: 16px;
 }
 
-.social-media-links a img {
-  transition: transform 0.5s ease-in-out;
+.modal-image img {
+  width: 100%;
 }
 
-.social-media-links a img:hover {
-  transform: scale(1.2);
+.social-media-links a img {
+  transition: transform 0.5s ease-in-out;
 }
 
 .work-section {
@@ -424,13 +432,13 @@ header {
   padding: 16px;
 }
 
-.work-section .projects-list .project .preview-image {
+.project .preview-image {
   width: 100%;
   height: 220px;
   border-radius: 8px;
 }
 
-.work-section .projects-list .project .preview-image img {
+.project .preview-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -439,11 +447,15 @@ header {
   transition: transform 0.6s ease-in-out;
 }
 
-.work-section .projects-list .project .preview-image img:hover {
+.social-media-links a img:hover {
+  transform: scale(1.2);
+}
+
+.project .preview-image img:hover {
   transform: scale(1.05);
 }
 
-.work-section .projects-list .project .details {
+.project .details {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -452,7 +464,7 @@ header {
   gap: 16px;
 }
 
-.work-section .projects-list .project .details .name {
+.project .name {
   width: 100%;
   font-style: normal;
   font-weight: 700;
@@ -461,7 +473,7 @@ header {
   color: #172b4d;
 }
 
-.work-section .projects-list .project .details .developer-role {
+.project .developer-role {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -469,25 +481,25 @@ header {
   gap: 12px;
 }
 
-.work-section .projects-list .project .details .developer-role .client-name,
-.work-section .projects-list .project .details .developer-role .role,
-.work-section .projects-list .project .details .developer-role .year-label {
+.project .developer-role .client-name,
+.project .developer-role .role,
+.project .developer-role .year-label {
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
 }
 
-.work-section .projects-list .project .details .developer-role .client-name {
+.project .developer-role .client-name {
   color: #344563;
 }
 
-.work-section .projects-list .project .details .developer-role .role,
-.work-section .projects-list .project .details .developer-role .year-label {
+.project .developer-role .role,
+.project .developer-role .year-label {
   color: #7a869a;
 }
 
-.work-section .projects-list .project .details .description {
+.project .description {
   width: 100%;
   font-style: normal;
   font-weight: 400;
@@ -496,13 +508,22 @@ header {
   color: #344563;
 }
 
-.work-section .projects-list .project .details .technologies-tags {
+.project .technologies-tags {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   padding: 0;
   gap: 8px;
+}
+
+.project .technologies-tags li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  background-color: #ebebff;
+  border-radius: 8px;
 }
 
 .skills-list-box .skill-item .content .skills-details li {
@@ -517,17 +538,22 @@ header {
   padding: 9px 12px;
 }
 
-.work-section .projects-list .project .details .technologies-tags li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 4px 12px;
-  background-color: #ebebff;
-  border-radius: 8px;
+.project .technologies-tags li span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
 }
 
-.work-section .projects-list .project .details .technologies-tags li.desktop {
-  display: none;
+.project .see-more-details {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .skills-list-box .skill-item .title button span {
@@ -537,24 +563,6 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-
-.work-section .projects-list .project .details .technologies-tags li span {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-}
-
-.work-section .projects-list .project .details .see-more-details {
-  width: 100%;
-  height: 72px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
 }
 
 .about-myself-section {
@@ -829,12 +837,103 @@ footer {
   background-color: #eafaee;
 }
 
-.desktop {
+.modal-window {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(193, 199, 208, 0.8);
+  padding: 50px 16px 8px 16px;
+  overflow-y: scroll;
+}
+
+.modal-window.show {
+  display: block;
+}
+
+.modal-window.hidden {
   display: none;
 }
 
-.mobile {
-  display: inline-block;
+.modal-content {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  padding: 18px 16px 20px 16px;
+  font-family: 'Poppins', sans-serif;
+  transform: scale(0);
+}
+
+.modal-window.show .modal-content {
+  transform: scale(1);
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-iteration-count: initial;
+  animation-direction: alternate;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.modal-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 0;
+}
+
+.btn-close-modal {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 6px 8px;
+}
+
+.modal-client-role-details {
+  margin-bottom: 20px;
+}
+
+.modal-client-role-details .developer-role {
+  padding-top: 10px;
+}
+
+.modal-details .description {
+  padding: 12px 0;
+}
+
+.modal-skills-footer .technologies-tags {
+  width: 100%;
+  border-bottom: 1px solid #ebecf0;
+  padding-bottom: 25px;
+  padding-top: 8px;
+  margin-bottom: 35px;
+}
+
+.modal-footer-buttons {
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -958,35 +1057,31 @@ footer {
     gap: 24px;
   }
 
-  .work-section .projects-list .project .details .name {
+  .project .name {
     font-size: 40px;
     line-height: 52px;
     color: #091e42;
   }
 
-  .work-section .projects-list .project .details .developer-role .client-name,
-  .work-section .projects-list .project .details .developer-role .role,
-  .work-section .projects-list .project .details .developer-role .year-label {
+  .project .developer-role .client-name,
+  .project .developer-role .role,
+  .project .developer-role .year-label {
     font-size: 18px;
     line-height: 24px;
   }
 
-  .work-section .projects-list .project .details .developer-role .client-name {
+  .project .developer-role .client-name {
     font-weight: 500;
   }
 
-  .work-section .projects-list .project .details .developer-role .role,
-  .work-section .projects-list .project .details .developer-role .year-label {
+  .project .developer-role .role,
+  .project .developer-role .year-label {
     font-weight: 400;
     color: #6b778c;
   }
 
-  .work-section .projects-list .project .details .description {
+  .project .description {
     font-size: 16px;
-  }
-
-  .work-section .projects-list .project .details .technologies-tags li.desktop {
-    display: inline-block;
   }
 
   .about-myself-section {
@@ -1087,15 +1182,40 @@ footer {
     justify-content: center;
   }
 
+  .modal-window .divider-container {
+    display: none;
+  }
+
   .contact-form .container .divider-container {
     display: none;
   }
 
-  .desktop {
-    display: inline-block;
+  .modal-window {
+    padding-top: 77px;
+    padding-bottom: 68px;
+    padding-left: calc(24px + 10vw);
+    padding-right: calc(24px + 10vw);
   }
 
-  .mobile {
-    display: none;
+  .modal-content {
+    padding: 24px 24px 111px 24px;
+  }
+
+  .modal-image img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .modal-details {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 36px;
+    gap: 12px;
+  }
+
+  .modal-details .description {
+    width: 60%;
+    font-size: 16px;
+    line-height: 30px;
   }
 }

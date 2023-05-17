@@ -147,7 +147,9 @@ This will show you a log with details about errors (if any) and changes that wou
 - [x] **Create the desktop version of the webpage**
 - [x] **Create animations for some elements of the web page with css**
 - [x] **Create the mobile navigation menu**
-- [ ] **Create the mobile version of a popup window to show the details of a project**
+- [x] **Create the mobile version of a popup window to show the details of a project**
+- [x] **Create the desktop version of a popup window to show the details of a project**
+- [ ] **Add validations to the contact form using Javascript to optimize functionality**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
