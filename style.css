@@ -1192,4 +1192,37 @@ footer {
   .mobile {
     display: none;
   }
+
+  .modal-window {
+    padding-top: 77px;
+    padding-bottom: 68px;
+    padding-left: calc(24px + 8.2vw);
+    padding-right: calc(24px + 8.2vw);
+  }
+
+  .modal-window .divider-container {
+    display: none;
+  }
+
+  .modal-content {
+    padding: 24px 24px 111px 24px;
+  }
+
+  .modal-image img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .modal-details {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 36px;
+    gap: 12px;
+  }
+
+  .modal-details .description {
+    width: 65%;
+    font-size: 16px;
+    line-height: 30px;
+  }
 }
