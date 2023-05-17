@@ -184,6 +184,13 @@ body {
   width: 80%;
 }
 
+.modal-footer-buttons a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
 .mobile-main-menu .menu-list li a {
   width: 100%;
   font-family: 'Poppins', sans-serif;
@@ -386,12 +393,12 @@ header {
   gap: 16px;
 }
 
-.social-media-links a img {
-  transition: transform 0.5s ease-in-out;
+.modal-image img {
+  width: 100%;
 }
 
-.social-media-links a img:hover {
-  transform: scale(1.2);
+.social-media-links a img {
+  transition: transform 0.5s ease-in-out;
 }
 
 .work-section {
@@ -438,6 +445,10 @@ header {
   object-position: center;
   border-radius: 8px;
   transition: transform 0.6s ease-in-out;
+}
+
+.social-media-links a img:hover {
+  transform: scale(1.2);
 }
 
 .project .preview-image img:hover {
@@ -506,6 +517,15 @@ header {
   gap: 8px;
 }
 
+.project .technologies-tags li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  background-color: #ebebff;
+  border-radius: 8px;
+}
+
 .skills-list-box .skill-item .content .skills-details li {
   width: 100%;
   height: 67px;
@@ -516,24 +536,6 @@ header {
   background-color: #f7f7f9;
   border-radius: 8px;
   padding: 9px 12px;
-}
-
-.project .technologies-tags li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 4px 12px;
-  background-color: #ebebff;
-  border-radius: 8px;
-}
-
-.skills-list-box .skill-item .title button span {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 .project .technologies-tags li span {
@@ -552,6 +554,15 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+.skills-list-box .skill-item .title button span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-myself-section {
@@ -855,7 +866,7 @@ footer {
   top: 0;
   left: 0;
   z-index: 2000;
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 18px 16px 20px 16px;
   font-family: 'Poppins', sans-serif;
@@ -884,17 +895,13 @@ footer {
   padding-top: 10px;
 }
 
-.modal-image img {
-  width: 100%;
-}
-
 .modal-details .description {
   padding: 12px 0;
 }
 
 .modal-skills-footer .technologies-tags {
   width: 100%;
-  border-bottom: 1px solid #EBECF0;
+  border-bottom: 1px solid #ebecf0;
   padding-bottom: 25px;
   padding-top: 8px;
   margin-bottom: 35px;
@@ -902,21 +909,11 @@ footer {
 
 .modal-footer-buttons {
   width: 100%;
-}
-
-.modal-footer-buttons {
   margin-bottom: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
-}
-
-.modal-footer-buttons a {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1040,30 +1037,30 @@ footer {
     gap: 24px;
   }
 
- .project .name {
+  .project .name {
     font-size: 40px;
     line-height: 52px;
     color: #091e42;
   }
 
- .project .developer-role .client-name,
- .project .developer-role .role,
- .project .developer-role .year-label {
+  .project .developer-role .client-name,
+  .project .developer-role .role,
+  .project .developer-role .year-label {
     font-size: 18px;
     line-height: 24px;
   }
 
- .project .developer-role .client-name {
+  .project .developer-role .client-name {
     font-weight: 500;
   }
 
- .project .developer-role .role,
- .project .developer-role .year-label {
+  .project .developer-role .role,
+  .project .developer-role .year-label {
     font-weight: 400;
     color: #6b778c;
   }
 
- .project .description {
+  .project .description {
     font-size: 16px;
   }
 
@@ -1165,6 +1162,10 @@ footer {
     justify-content: center;
   }
 
+  .modal-window .divider-container {
+    display: none;
+  }
+
   .contact-form .container .divider-container {
     display: none;
   }
@@ -1174,10 +1175,6 @@ footer {
     padding-bottom: 68px;
     padding-left: calc(24px + 8.2vw);
     padding-right: calc(24px + 8.2vw);
-  }
-
-  .modal-window .divider-container {
-    display: none;
   }
 
   .modal-content {
