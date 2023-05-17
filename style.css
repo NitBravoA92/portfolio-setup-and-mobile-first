@@ -837,7 +837,7 @@ footer {
   background-color: #eafaee;
 }
 
-.contact-form #errormessage { 
+.contact-form #errormessage {
   display: none;
   color: red;
   margin-bottom: 15px;

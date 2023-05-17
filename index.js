@@ -169,12 +169,12 @@ modalWindow.addEventListener('click', (e) => {
 
 // form validation
 const contactForm = document.querySelector('#contact-me-form');
-contactForm.addEventListener('submit', function(event) {
+contactForm.addEventListener('submit', (event) => {
   const inputEmailValue = document.querySelector('#user-email').value;
   const emailValueLowerCase = inputEmailValue.toLowerCase();
   const errorMessage = document.querySelector('#errormessage');
   errorMessage.style.display = 'none';
-  if(inputEmailValue !== emailValueLowerCase) {
+  if (inputEmailValue !== emailValueLowerCase) {
     event.preventDefault();
     errorMessage.style.display = 'block';
   }
