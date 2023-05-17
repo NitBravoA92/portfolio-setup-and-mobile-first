@@ -1052,34 +1052,34 @@ footer {
     gap: 24px;
   }
 
-  .work-section .projects-list .project .details .name {
+ .project .name {
     font-size: 40px;
     line-height: 52px;
     color: #091e42;
   }
 
-  .work-section .projects-list .project .details .developer-role .client-name,
-  .work-section .projects-list .project .details .developer-role .role,
-  .work-section .projects-list .project .details .developer-role .year-label {
+ .project .developer-role .client-name,
+ .project .developer-role .role,
+ .project .developer-role .year-label {
     font-size: 18px;
     line-height: 24px;
   }
 
-  .work-section .projects-list .project .details .developer-role .client-name {
+ .project .developer-role .client-name {
     font-weight: 500;
   }
 
-  .work-section .projects-list .project .details .developer-role .role,
-  .work-section .projects-list .project .details .developer-role .year-label {
+ .project .developer-role .role,
+ .project .developer-role .year-label {
     font-weight: 400;
     color: #6b778c;
   }
 
-  .work-section .projects-list .project .details .description {
+ .project .description {
     font-size: 16px;
   }
 
-  .work-section .projects-list .project .details .technologies-tags li.desktop {
+ .project .technologies-tags li.desktop {
     display: inline-block;
   }
 
