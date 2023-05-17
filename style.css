@@ -838,8 +838,9 @@ footer {
 }
 
 .contact-form #errormessage { 
-  display: none;
+  display: block;
   color: red;
+  margin-bottom: 15px;
 }
 
 .modal-window {
