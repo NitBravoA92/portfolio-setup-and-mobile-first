@@ -180,7 +180,17 @@ contactForm.addEventListener('submit', (event) => {
   }
 });
 
-// Local Storage
+// preserve data
+function getFormData() {
+  const inputName = document.querySelector('#user-name');
+  const inputEmail = document.querySelector('#user-email');
+  const inputMessage = document.querySelector('#user-message');
+  return { inputName: inputName, 
+           inputEmail: inputEmail, 
+           inputMessage: inputMessage 
+          };
+}
+
 function storage(type) {
   let storage;
   try {
@@ -198,3 +208,39 @@ function storage(type) {
       && (storage && storage.length !== 0);
   }
 }
+
+function setDataInForm({ inputName, inputEmail, inputMessage }) {
+  const formData = JSON.parse(localStorage.getItem('form-data'));
+  inputName.value = formData.name;
+  inputEmail.value = formData.email;
+  inputMessage.value = formData.message;
+}
+
+function saveDataInLocalStorage({ inputName, inputEmail, inputMessage }) {
+  const formData = {
+    name: inputName.value,
+    email: inputEmail.value,
+    message: inputMessage.value,
+  };
+  localStorage.setItem('form-data', JSON.stringify(formData));
+  setDataInForm({ inputName, inputEmail, inputMessage });
+}
+
+const allFormData = getFormData();
+if (storage('localStorage')) {
+  if (!localStorage.getItem('form-data')) {
+    saveDataInLocalStorage(allFormData);
+  } else {
+    setDataInForm(allFormData);
+  }
+}
+
+allFormData.inputName.addEventListener('input', function () {
+  saveDataInLocalStorage(allFormData);
+});
+allFormData.inputEmail.addEventListener('input', function () {
+  saveDataInLocalStorage(allFormData);
+});
+allFormData.inputMessage.addEventListener('input', function () {
+  saveDataInLocalStorage(allFormData);
+});
