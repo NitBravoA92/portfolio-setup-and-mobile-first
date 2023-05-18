@@ -185,10 +185,11 @@ function getFormData() {
   const inputName = document.querySelector('#user-name');
   const inputEmail = document.querySelector('#user-email');
   const inputMessage = document.querySelector('#user-message');
-  return { inputName: inputName, 
-           inputEmail: inputEmail, 
-           inputMessage: inputMessage 
-          };
+  return {
+    inputName,
+    inputEmail,
+    inputMessage,
+  };
 }
 
 function storage(type) {
@@ -235,12 +236,12 @@ if (storage('localStorage')) {
   }
 }
 
-allFormData.inputName.addEventListener('input', function () {
+allFormData.inputName.addEventListener('input', () => {
   saveDataInLocalStorage(allFormData);
 });
-allFormData.inputEmail.addEventListener('input', function () {
+allFormData.inputEmail.addEventListener('input', () => {
   saveDataInLocalStorage(allFormData);
 });
-allFormData.inputMessage.addEventListener('input', function () {
+allFormData.inputMessage.addEventListener('input', () => {
   saveDataInLocalStorage(allFormData);
 });
