@@ -168,13 +168,13 @@
           </p>
           <form action="https://formspree.io/f/mayzvopn" method="POST" id="contact-me-form">
             <div class="form-element-container">
-              <input type="text" class="form-element" name="name" placeholder="Write your name here" maxlength="30" title="You can only add maximum: 30 characters" required>
+              <input type="text" class="form-element" id="user-name" name="name" placeholder="Write your name here" maxlength="30" title="You can only add maximum: 30 characters" required>
             </div>
             <div class="form-element-container">
               <input type="email" class="form-element" id="user-email" name="email" placeholder="Write your Email here" title="example@email.com" pattern="^[^@\s]+@[^@\s]+[.a-z]+$" required>
             </div>
             <div class="form-element-container">
-              <textarea class="form-element" name="message" placeholder="Write your Message here" maxlength="500" title="You can only add maximum: 500 characters" rows="6" cols="50" required></textarea>
+              <textarea class="form-element" id="user-message" name="message" placeholder="Write your Message here" maxlength="500" title="You can only add maximum: 500 characters" rows="6" cols="50" required></textarea>
             </div>
             <span id="errormessage">Your email must be in lowercase letters</span>
             <div class="form-element-container">

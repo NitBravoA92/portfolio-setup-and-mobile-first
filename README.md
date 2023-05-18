@@ -54,6 +54,7 @@ The following link is a video presentation of the project. In this video I expla
 - **Use of semantic HTML in the code structure**
 - **Combination of the Grid and Flexbox system to build the layout**
 - **Client side form Validations**
+- **Form data preserve in local storage to improve user experience**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,6 +99,7 @@ It is also important to have at least basic knowledge of HTML, CSS and Javascrip
 - [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 - [JavaScript Forms](https://www.w3schools.com/js/js_validation.asp)
 - [JavaScript Form Validation](https://www.javatpoint.com/javascript-form-validation)
+- [Window: localStorage property](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 
 ### Install
 
@@ -158,7 +160,7 @@ This will show you a log with details about errors (if any) and changes that wou
 - [x] **Create the mobile version of a popup window to show the details of a project**
 - [x] **Create the desktop version of a popup window to show the details of a project**
 - [x] **Add validations to the contact form using Javascript to optimize functionality**
-- [ ] **Implement the persistence of Works section data using Local storage**
+- [x] **Implement the persistence of Works section data using Local storage**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -179,3 +179,69 @@ contactForm.addEventListener('submit', (event) => {
     errorMessage.style.display = 'block';
   }
 });
+
+// preserve data
+function getFormData() {
+  const inputName = document.querySelector('#user-name');
+  const inputEmail = document.querySelector('#user-email');
+  const inputMessage = document.querySelector('#user-message');
+  return {
+    inputName,
+    inputEmail,
+    inputMessage,
+  };
+}
+
+function storage(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return e instanceof DOMException && (
+      e.code === 22
+      || e.code === 1014
+      || e.name === 'QuotaExceededError'
+      || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+      && (storage && storage.length !== 0);
+  }
+}
+
+function setDataInForm({ inputName, inputEmail, inputMessage }) {
+  const formData = JSON.parse(localStorage.getItem('form-data'));
+  inputName.value = formData.name;
+  inputEmail.value = formData.email;
+  inputMessage.value = formData.message;
+}
+
+function saveDataInLocalStorage({ inputName, inputEmail, inputMessage }) {
+  const formData = {
+    name: inputName.value,
+    email: inputEmail.value,
+    message: inputMessage.value,
+  };
+  localStorage.setItem('form-data', JSON.stringify(formData));
+  setDataInForm({ inputName, inputEmail, inputMessage });
+}
+
+const allFormData = getFormData();
+if (storage('localStorage')) {
+  if (!localStorage.getItem('form-data')) {
+    saveDataInLocalStorage(allFormData);
+  } else {
+    setDataInForm(allFormData);
+  }
+}
+
+allFormData.inputName.addEventListener('input', () => {
+  saveDataInLocalStorage(allFormData);
+});
+allFormData.inputEmail.addEventListener('input', () => {
+  saveDataInLocalStorage(allFormData);
+});
+allFormData.inputMessage.addEventListener('input', () => {
+  saveDataInLocalStorage(allFormData);
+});
