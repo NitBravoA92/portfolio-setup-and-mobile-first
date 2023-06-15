@@ -24,41 +24,14 @@ menuLinks.forEach((navLink) => {
 // Project Data
 const projectData = [
   {
-    image: './img/facebook-360-desktop.png',
-    title: 'Tonic',
-    client_info: ['canopy', 'Back End Dev', '2015'],
-    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: './img/capstone-project.png',
+    title: 'Psychological Therapy Week Event 2023',
+    client_info: ['HappyMind Foundation', 'Full-Stack Dev', '2023'],
+    text: 'Psychological Therapy Week is a major mental health event organized by the HappyMind International Foundation that offers different communities around the world the opportunity to receive psychological help, no matter their age, sex, or religion.',
     skills: ['html', 'css', 'javascript'],
-    source: 'https://github.com/over-geek/Portfolio-website2',
-    livelink: 'https://over-geek.github.io/overgeek.github.io/',
-  },
-  {
-    image: './img/uber-navigation.png',
-    title: 'Multi-Post Stories',
-    client_info: ['CANOPY', 'Back End Dev', '2015'],
-    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    skills: ['html', 'css', 'javascript'],
-    source: 'https://github.com/over-geek/Portfolio-website2',
-    livelink: 'https://over-geek.github.io/overgeek.github.io/',
-  },
-  {
-    image: './img/tonic-02.png',
-    title: 'Tonic',
-    client_info: ['CANOPY', 'Back End Dev', '2015'],
-    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    skills: ['html', 'css', 'javascript'],
-    source: 'https://github.com/over-geek/Portfolio-website2',
-    livelink: 'https://over-geek.github.io/overgeek.github.io/',
-  },
-  {
-    image: './img/multi-post-stories-desktop.png',
-    title: 'Multi-Post Stories',
-    client_info: ['CANOPY', 'Back End Dev', '2015'],
-    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    skills: ['html', 'css', 'javascript'],
-    source: 'https://github.com/over-geek/Portfolio-website2',
-    livelink: 'https://over-geek.github.io/overgeek.github.io/',
-  },
+    source: 'https://github.com/NitBravoA92/capstone-project',
+    livelink: 'https://nitbravoa92.github.io/capstone-project/index.html',
+  }
 ];
 
 // Render Project Cards
