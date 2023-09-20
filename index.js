@@ -72,7 +72,7 @@ const projectData = [
     skills: ['html', 'css', 'ReactJS'],
     source: 'https://github.com/NitBravoA92/covid19-metrics-webapp',
     livelink: 'https://covid19-global-stats.onrender.com/',
-  }
+  },
 ];
 
 // Render Project Cards
