@@ -26,11 +26,52 @@ const projectData = [
   {
     image: './img/capstone-project.png',
     title: 'Psychological Therapy Week Event 2023',
-    client_info: ['HappyMind Foundation', 'Full-Stack Dev', '2023'],
+    client_info: ['HappyMind Foundation', 'Frontend Dev', '2023'],
     text: 'Psychological Therapy Week is a major mental health event organized by the HappyMind International Foundation that offers different communities around the world the opportunity to receive psychological help, no matter their age, sex, or religion.',
+    long_text: '',
     skills: ['html', 'css', 'javascript'],
     source: 'https://github.com/NitBravoA92/capstone-project',
     livelink: 'https://nitbravoa92.github.io/capstone-project/index.html',
+  },
+  {
+    image: './img/series_feedback.png',
+    title: 'Series Feedback',
+    client_info: ['Microverse', 'Frontend Dev', '2023'],
+    text: 'SeriesFeedback is an interactive website that provides a platform for users to engage in discussions and share their feedback on a wide range of TV shows.',
+    long_text: '',
+    skills: ['html', 'css', 'javascript'],
+    source: 'https://github.com/PabloBona/JavaScriptCapstone',
+    livelink: 'https://pablobona.github.io/JavaScriptCapstone/dist/index.html',
+  },
+  {
+    image: './img/bookstore.png',
+    title: 'Bookstore',
+    client_info: ['Microverse', 'Frontend Dev', '2023'],
+    text: 'The bookstore is a books web application built with ReactJS, where users can see a list of the latest and most famous books added and obtain detailed information about them.',
+    long_text: '',
+    skills: ['html', 'css', 'ReactJS'],
+    source: 'https://github.com/NitBravoA92/bookstore',
+    livelink: 'https://bookstore-app-ho74.onrender.com/',
+  },
+  {
+    image: './img/space-traveling-hub.png',
+    title: 'Space Travelers Hub',
+    client_info: ['Microverse', 'Frontend Dev', '2023'],
+    text: 'Space Travelers Hub is a web application of a company that offers space travel services. The application is made with ReactJS and Redux to manage the global state of the application, the spaceX API is used to query and show users the list of available Missions and Rockets.',
+    long_text: '',
+    skills: ['html', 'css', 'ReactJS'],
+    source: 'https://github.com/NitBravoA92/space-travelers-hub',
+    livelink: 'https://space-travelers-hub-l1ba.onrender.com/',
+  },
+  {
+    image: './img/covid19-stats.png',
+    title: 'Covid19 Global Cases Stats',
+    client_info: ['Microverse', 'Frontend Dev', '2023'],
+    text: 'Covid19 Global Cases Stats is an application built with ReactJS and Redux to manage the global state of the application, the Disease.sh API is used to query and show users the covid19 disease-related statistics by continents and countries.',
+    long_text: '',
+    skills: ['html', 'css', 'ReactJS'],
+    source: 'https://github.com/NitBravoA92/covid19-metrics-webapp',
+    livelink: 'https://covid19-global-stats.onrender.com/',
   }
 ];
 
@@ -103,7 +144,7 @@ btnProjectDetails.forEach((btnElement, index) => {
       </div>
       <div class="modal-details">
         <p class="description">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+          ${projectData[index].long_text}
         </p>
         <div class="modal-skills-footer">
             <ul class="technologies-tags">
