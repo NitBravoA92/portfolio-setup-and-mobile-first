@@ -1,3 +1,16 @@
+:root {
+  --primary-color: #0b1039;
+  --secondary-color: #ebebff;
+  --tertiary-color: #6070ff;
+  --quaternary-color: #172b4d;
+  --quinary-color: #344563;
+  --senary-color: #7a869a;
+  --septenary-color: #c1c7d0;
+  --octonary-color: #dfe1e6;
+  --nonary-color: #f7f7f9;
+  --denary-color: #fff;
+}
+
 *,
 *::before,
 *::after {
@@ -41,7 +54,7 @@ body {
 }
 
 .btn-bordered {
-  border: 1px solid #6070ff;
+  border: 1px solid var(--primary-color);
 }
 
 .btn-white-bg {
@@ -49,13 +62,22 @@ body {
 }
 
 .btn-blue-text {
-  color: #396df2;
+  color: var(--primary-color);
+}
+
+.btn-static-white {
+  background-color: #fff;
 }
 
 .btn:hover {
-  background-color: #6070ff;
+  background-color: var(--primary-color);
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
+}
+
+.btn-static-white:hover {
+  background-color: #fff;
+  color: var(--primary-color);
 }
 
 .btn:active {
@@ -139,7 +161,11 @@ body {
   width: 134px;
   height: 5px;
   border-radius: 10px;
-  background-color: #0d151e;
+  background-color: var(--secondary-color);
+}
+
+.border-bottom-4 {
+  border-bottom: 4px solid var(--primary-color);
 }
 
 /* Mobile Menu */
@@ -219,7 +245,7 @@ header {
   left: 0;
   z-index: 10;
   width: 100%;
-  height: 48px;
+  height: 58px;
   background-color: #fff;
   font-family: 'Poppins', sans-serif;
 }
@@ -240,10 +266,14 @@ header {
   width: 76px;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 20px;
-  color: #6070ff;
+  color: var(--primary-color);
   animation: rotatee 5s alternate ease-in-out 1s;
+}
+
+.logo span {
+  color: var(--tertiary-color);
 }
 
 @keyframes rotatee {
@@ -276,7 +306,7 @@ header {
 }
 
 .btn-mobile-menu:hover {
-  background-color: #6070ff;
+  background-color: var(--primary-color);
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
@@ -358,6 +388,12 @@ header {
   line-height: 52px;
   color: #172b4d;
   overflow: hidden;
+}
+
+.pacific-font {
+  font-size: 60px;
+  font-family: 'Pacifico', cursive;
+  padding: 1rem 0;
 }
 
 .main-message {
@@ -536,6 +572,7 @@ header {
   background-color: #f7f7f9;
   border-radius: 8px;
   padding: 9px 12px;
+  transition: all 0.5s ease-in-out;
 }
 
 .project .technologies-tags li span {
@@ -544,16 +581,11 @@ header {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070ff;
+  color: var(--tertiary-color);
 }
 
-.project .see-more-details {
-  width: 100%;
-  height: 72px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+.skills-list-box .skill-item .content .skills-details li:hover {
+  background-color: #0b1039;
 }
 
 .skills-list-box .skill-item .title button span {
@@ -563,6 +595,19 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.skills-list-box .skill-item .content .skills-details li:hover > span {
+  color: #fff;
+}
+
+.project .see-more-details {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .about-myself-section {
@@ -730,7 +775,7 @@ footer {
   position: relative;
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
-  background-color: #6070ff;
+  background-color: var(--primary-color);
   border: none;
   border-top-left-radius: 80px;
 }
@@ -1006,7 +1051,6 @@ footer {
 
   .main-greeting {
     width: 100%;
-    font-size: 48px;
     line-height: 60px;
     color: #091e42;
     letter-spacing: 0.37px;
@@ -1032,9 +1076,6 @@ footer {
   }
 
   .work-section .container.projects-list .project {
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 22px;
     padding: 24px;
     border-radius: 24px;
     transition: all 0.5s ease-in-out;
@@ -1042,26 +1083,6 @@ footer {
 
   .work-section .container.projects-list .project:hover {
     filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
-  }
-
-  .work-section .container.projects-list .project:nth-child(odd) {
-    flex-direction: row;
-  }
-
-  .work-section .container.projects-list .project:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-
-  .work-section .projects-list .project .preview-image {
-    width: 50%;
-    height: 448px;
-  }
-
-  .work-section .projects-list .project .details {
-    width: 50%;
-    justify-content: flex-start;
-    padding: 24px;
-    gap: 24px;
   }
 
   .project .name {
@@ -1091,28 +1112,13 @@ footer {
     font-size: 16px;
   }
 
-  .about-myself-section {
-    padding-bottom: 0;
-  }
-
   .about-myself-section .section-mobile-bg {
     background-image: url('./img/about-myself-background-desktop.png');
     background-size: 100% 100%;
   }
 
-  .about-myself-section .container {
-    width: 100%;
-    flex-direction: row;
-    gap: 36px;
-    padding-top: 166px;
-    padding-bottom: 166px;
-    padding-left: calc(24px + 8.3vw);
-    padding-right: calc(24px + 8.3vw);
-  }
-
-  .about-myself-section .about-me {
-    width: 40%;
-    padding-top: 12px;
+  .about-myself-section {
+    padding-bottom: 0;
   }
 
   .about-myself-section .section-title {
@@ -1122,10 +1128,6 @@ footer {
 
   .about-myself-section .about-me-message {
     padding: 0;
-  }
-
-  .about-myself-section .tech-skills {
-    width: 60%;
   }
 
   .skills-list-box {
@@ -1224,5 +1226,52 @@ footer {
     width: 60%;
     font-size: 16px;
     line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .work-section .container.projects-list .project {
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 22px;
+  }
+
+  .work-section .container.projects-list .project:nth-child(odd) {
+    flex-direction: row;
+  }
+
+  .work-section .container.projects-list .project:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .work-section .projects-list .project .preview-image {
+    width: 50%;
+    height: 448px;
+  }
+
+  .work-section .projects-list .project .details {
+    width: 50%;
+    justify-content: flex-start;
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .about-myself-section .container {
+    width: 100%;
+    flex-direction: row;
+    gap: 36px;
+    padding-top: 166px;
+    padding-bottom: 166px;
+    padding-left: calc(24px + 8.3vw);
+    padding-right: calc(24px + 8.3vw);
+  }
+
+  .about-myself-section .about-me {
+    width: 40%;
+    padding-top: 12px;
+  }
+
+  .about-myself-section .tech-skills {
+    width: 60%;
   }
 }

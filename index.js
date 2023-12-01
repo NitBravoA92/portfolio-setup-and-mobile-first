@@ -24,54 +24,94 @@ menuLinks.forEach((navLink) => {
 // Project Data
 const projectData = [
   {
-    image: './img/capstone-project.png',
-    title: 'Psychological Therapy Week Event 2023',
-    client_info: ['HappyMind Foundation', 'Frontend Dev', '2023'],
-    text: 'Psychological Therapy Week is a major mental health event organized by the HappyMind International Foundation that offers different communities around the world the opportunity to receive psychological help, no matter their age, sex, or religion.',
-    long_text: '',
-    skills: ['html', 'css', 'javascript'],
-    source: 'https://github.com/NitBravoA92/capstone-project',
-    livelink: 'https://nitbravoa92.github.io/capstone-project/index.html',
+    image: './img/gourmet-experience-app.png',
+    title: 'Gourmet Experience App',
+    client_info: ['Microverse', 'Full-stack Dev', '2023'],
+    text: 'This project is a web application built with ReactJS and Redux Toolkit that allows users to book gourmet experiences in a quick and easy way, which they can gift to others. It connects with the GourmetExperience API to manage users, gastronomic experiences, and reservations.',
+    long_text: 'This project consists of a web application built with ReactJS and Redux Toolkit that allows users to book gourmet experiences that they can give to others, quickly and easily. It connects to the GourmetExperience API and obtains all the information of registered users, the list of available gastronomic experiences, the list of reservations made by a selected user, and allows new users to be registered, authenticate existing users, create new reservations and delete them.',
+    skills: ['Ruby on Rails', 'PostgreSQL', 'ReactJS', 'CSS3'],
+    source: 'https://github.com/HFG43/final_capstone_front_end',
+    livelink: 'https://gourmet-experiences-app.onrender.com/login',
   },
   {
-    image: './img/series_feedback.png',
-    title: 'Series Feedback',
+    image: './img/you-payment-app.png',
+    title: 'YouPayment App',
+    client_info: ['Microverse', 'Full-stack Dev', '2023'],
+    text: 'YouPayment is a mobile budgeting application developed with Ruby on Rails, PostgreSQL, and TailwindCSS. It allows users to record and categorize their expenses, providing effective, private, and secure control of their financial information for better money management.',
+    long_text: 'YouPayment is a mobile budget app built with Ruby on Rails, PostgreSQL, and TailwindCSS. It allows the user to record all their expense transactions and classify them by categories. This helps the user to keep effective, private, and secure control of all the information on their expenses, and thus be able to make better decisions about money management.',
+    skills: ['Ruby on Rails', 'PostgreSQL', 'HTML5', 'TailwindCSS'],
+    source: 'https://github.com/NitBravoA92/budget-app',
+    livelink: 'https://budget-app-v4rw.onrender.com/',
+  },
+  {
+    image: './img/easyCOOK.png',
+    title: 'easyCOOK App',
+    client_info: ['Microverse', 'Full-stack Dev', '2023'],
+    text: 'easyCOOK is a web application built on Ruby on Rails that allows you to save ingredients, keep track of what you have in stock, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe.',
+    long_text: "easyCOOK is a web application developed with Ruby on Rails, PostgreSQL and TailwindCSS, designed to facilitate the management of your cooking recipes. This application allows you to store the ingredients you have at home, keep track of them, and create new recipes. Additionally, you can generate a shopping list based on the ingredients you have and those you are missing for a specific recipe. With this application, you can organize your recipes efficiently, avoiding food waste and optimizing your purchases. In addition, its friendly and easy-to-use interface makes managing your recipes a simple and pleasant task. Whether you're planning a family dinner or just want to try a new recipe.",
+    skills: ['Ruby on Rails', 'PostgreSQL', 'HTML5', 'CSS3'],
+    source: 'https://github.com/NitBravoA92/recipe-app',
+    livelink: 'https://recipe-app-zxdn.onrender.com/',
+  },
+  {
+    image: './img/covid19-stats.png',
+    title: 'Covid19 Global Cases Stats',
     client_info: ['Microverse', 'Frontend Dev', '2023'],
-    text: 'SeriesFeedback is an interactive website that provides a platform for users to engage in discussions and share their feedback on a wide range of TV shows.',
-    long_text: '',
-    skills: ['html', 'css', 'javascript'],
-    source: 'https://github.com/PabloBona/JavaScriptCapstone',
-    livelink: 'https://pablobona.github.io/JavaScriptCapstone/dist/index.html',
+    text: '“Covid19 Global Cases Stats“ is an application built with ReactJS and Redux to manage the global state of the application, the Disease.sh API is used to query and show users the covid19 disease-related statistics by continents and countries.',
+    long_text: '“Covid19 Global Cases Stats” is a responsive and innovative web application built with ReactJS and Redux, two powerful JavaScript libraries. This application was designed with the aim of providing users with up-to-date and accurate information about the global Covid-19 pandemic. The application uses Redux to manage the global state. Redux is a JavaScript library for managing and updating the state of an application in a predictable manner. In the context of “Covid19 Global Cases Stats”, Redux is used to store and manage the data related to the Covid-19 statistics that are shown to users. ReactJS, on the other hand, is a JavaScript library for building user interfaces. In “Covid19 Global Cases Stats”, ReactJS is used to build the user interface of the application, allowing users to interact effectively with the presented data. The application is fed data from the Disease.sh API. This API provides updated information on Covid-19 statistics by continents and countries. The application queries this API to obtain the most recent data and presents it to users in an easy-to-understand manner.',
+    skills: ['html', 'css', 'ReactJS'],
+    source: 'https://github.com/NitBravoA92/covid19-metrics-webapp',
+    livelink: 'https://covid19-global-stats.onrender.com/',
+  },
+  {
+    image: './img/space-traveling-hub.png',
+    title: 'Space Travelers Hub',
+    client_info: ['Microverse', 'Frontend Dev', '2023'],
+    text: '“Space Travelers Hub” is a web application of a company that offers space travel services. The application is made with ReactJS and Redux to manage the global state of the application, the spaceX API is used to query and show users the list of available Missions and Rockets.',
+    long_text: '“Space Travelers Hub” is an innovative web application that combines modern web development technologies with real-time data from SpaceX to offer users a comprehensive platform to explore and book space travels. The application is built with ReactJS and Redux, two very popular and efficient JavaScript libraries. One of the highlights of “Space Travelers Hub” is its integration with the SpaceX API. This API provides real-time data on the available missions and rockets from SpaceX. The application queries this API to obtain the most recent and accurate information, which is then displayed to the users. This allows users to see an updated list of the available missions and rockets, helping them make informed decisions about their space travels.',
+    skills: ['html', 'css', 'ReactJS'],
+    source: 'https://github.com/NitBravoA92/space-travelers-hub',
+    livelink: 'https://space-travelers-hub-l1ba.onrender.com/',
   },
   {
     image: './img/bookstore.png',
     title: 'Bookstore',
     client_info: ['Microverse', 'Frontend Dev', '2023'],
     text: 'The bookstore is a books web application built with ReactJS, where users can see a list of the latest and most famous books added and obtain detailed information about them.',
-    long_text: '',
+    long_text: '“The Bookstore” is a web book application built with ReactJS with the aim of providing users with an interactive and user-friendly platform to explore a variety of books. At “The Bookstore”, users can view a list of the latest and most famous books that have been added to the application’s library. This list is regularly updated to ensure that users always have access to the most popular and current titles.',
     skills: ['html', 'css', 'ReactJS'],
     source: 'https://github.com/NitBravoA92/bookstore',
     livelink: 'https://bookstore-app-ho74.onrender.com/',
   },
   {
-    image: './img/space-traveling-hub.png',
-    title: 'Space Travelers Hub',
+    image: './img/series_feedback.png',
+    title: 'Series Feedback',
     client_info: ['Microverse', 'Frontend Dev', '2023'],
-    text: 'Space Travelers Hub is a web application of a company that offers space travel services. The application is made with ReactJS and Redux to manage the global state of the application, the spaceX API is used to query and show users the list of available Missions and Rockets.',
-    long_text: '',
-    skills: ['html', 'css', 'ReactJS'],
-    source: 'https://github.com/NitBravoA92/space-travelers-hub',
-    livelink: 'https://space-travelers-hub-l1ba.onrender.com/',
+    text: 'SeriesFeedback is an interactive website that provides a platform for users to engage in discussions and share their feedback on a wide range of TV shows.',
+    long_text: 'SeriesFeedback is an innovative, interactive website designed with Bootstrap and Javascript to serve as a comprehensive platform for television enthusiasts. It offers users the opportunity to engage in lively discussions, exchange opinions, and share their feedback on a wide array of TV shows spanning various genres, languages, and countries. The platform is designed with a user-friendly interface that allows users to easily navigate through different sections. Whether you’re a fan of drama, comedy, reality TV, or documentaries, “SeriesFeedback” has something for everyone. One of the key features of “SeriesFeedback” is its feedback system. Users can rate shows, write reviews, and share their thoughts on specific episodes or entire seasons. This feature not only allows users to express their views but also helps create a community of informed viewers who can help each other find their next favorite show.',
+    skills: ['html', 'css', 'javascript'],
+    source: 'https://github.com/PabloBona/JavaScriptCapstone',
+    livelink: 'https://pablobona.github.io/JavaScriptCapstone/dist/index.html',
   },
   {
-    image: './img/covid19-stats.png',
-    title: 'Covid19 Global Cases Stats',
-    client_info: ['Microverse', 'Frontend Dev', '2023'],
-    text: 'Covid19 Global Cases Stats is an application built with ReactJS and Redux to manage the global state of the application, the Disease.sh API is used to query and show users the covid19 disease-related statistics by continents and countries.',
-    long_text: '',
-    skills: ['html', 'css', 'ReactJS'],
-    source: 'https://github.com/NitBravoA92/covid19-metrics-webapp',
-    livelink: 'https://covid19-global-stats.onrender.com/',
+    image: './img/capstone-project.png',
+    title: 'Psychological Therapy Week Event 2023',
+    client_info: ['HappyMind Foundation', 'Frontend Dev', '2023'],
+    text: 'Psychological Therapy Week is a major mental health event organized by the HappyMind International Foundation that offers different communities around the world the opportunity to receive psychological help, no matter their age, sex, or religion.',
+    long_text: "Psychological Therapy Week is a website built with HTML, CSS3, and Javascript. It is a  major mental health event organized by the HappyMind International Foundation that offers different communities around the world the opportunity to receive psychological help, no matter their age, sex, or religion. The website's user-friendly interface seamlessly guides visitors through the process of connecting with a therapist, streamlining the path to receiving the support they need.",
+    skills: ['html', 'css', 'javascript'],
+    source: 'https://github.com/NitBravoA92/capstone-project',
+    livelink: 'https://nitbravoa92.github.io/capstone-project/index.html',
+  },
+  {
+    image: './img/itzamna-school.png',
+    title: 'Itzamná Education School',
+    client_info: ['AlejandraUtrilla', 'Frontend Dev', '2019'],
+    text: 'The website of the Itzamná educational center is a project developed with PHP that provides up-to-date information on school activities, upcoming events, news, and announcements.',
+    long_text: "The website of the Itzamná educational center is a project developed with PHP, which was part of the resources presented in the final project of a Master's degree in Educational Sciences for the Mesoamerican University Center 'Joaquin Miguel Gutierrez' in Mexico. Provides up-to-date information on school activities, upcoming events, news, and announcements. Visitors can explore the academic programs offered, meet the faculty, and get details about the admissions process.",
+    skills: ['PHP', 'HTML5', 'CSS3', 'javascript'],
+    source: 'https://github.com/NitBravoA92/itzamna-website',
+    livelink: 'https://ceitzamna.000webhostapp.com/',
   },
 ];
 
@@ -79,6 +119,7 @@ const projectData = [
 const projectCard = document.querySelector('.projects-list');
 
 function displayCards(id) {
+  const skills = projectData[id].skills.map((sk) => `<li><span>${sk}</span></li>`).join('');
   projectCard.innerHTML += `
     <article class="project">
       <div class="preview-image">
@@ -97,9 +138,7 @@ function displayCards(id) {
         ${projectData[id].text}
         </p>
         <ul class="technologies-tags">
-          <li><span>${projectData[id].skills[0]}</span></li>
-          <li><span>${projectData[id].skills[1]}</span></li>
-          <li><span>${projectData[id].skills[2]}</span></li>
+          ${skills}
         </ul>
         <div class="see-more-details">
           <button type="button" class="btn btn-project-details btn-bordered btn-white-bg btn-blue-text">See Project</button>
