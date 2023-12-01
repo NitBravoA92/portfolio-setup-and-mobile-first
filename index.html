@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -28,7 +31,7 @@
     </div>
     <header>
       <div class="logo-container">
-        <a href="index.html" class="logo">SoftwareDevOne</a>
+        <a href="index.html" class="logo">Software<span class="">Dev</span>One</a>
       </div>
       <nav class="navbar">
         <ul class="navbar-menu">
@@ -48,12 +51,12 @@
         <div class="section-mobile-bg"></div>
         <div class="section-mobile-shape"></div>
           <div class="container">
-            <h1 class="main-greeting">
-              <span class="move-down-animation">I’m Nitcelis.</span>
-              <span class="move-up-animation">Glad to see you!</span>
+            <h1 class="main-greeting pacific-font">
+              <span class="move-down-animation border-bottom-4">I’m Nitcelis.</span>
             </h1>
+            <p class="main-greeting"><span class="move-up-animation">Glad to see you!</span></p>
             <p class="main-message move-right-animation">
-              I’m a software developer! I have more than 2 years of experience working on frontend, backend and full-stack projects. I am looking for new challenges that will make me grow and elevate my professional experience. Open to new job opportunities. If you like what you see, don’t hesitate to contact me.
+              I am a Full Stack developer passionate about programming and the design of innovative solutions. I am looking for a big challenge that demands creative thinking, requires me to learn new things, and pushes my limits. Open to new job opportunities. If you like what you see, don’t hesitate to contact me.
             </p>
             <div class="social-media">
               <p class="connect-message move-down-animation">LET’S CONNECT</p>
@@ -79,7 +82,7 @@
               About Myself
             </h2>
             <p class="about-me-message">
-              Hello, my name is Nitcelis Bravo and I am a Software Developer with more than 2 years of experience working on different web development projects such as e-commerce, renting applications, service management, and more, using technologies like PHP-Laravel, Javascript, ReactJS, Java, MySQL and PostgreSQL. I am very passionate about programming, especially because I enjoy creating algorithms and solving problems using logical reasoning. I am also a person who likes to learn new things every day, I am very responsible, I like to work in a dynamic teams and I am always willing to help others. I am currently looking for a job opportunity where I can continue to grow as a professional and contribute my knowledge to a company.
+              Hello, my name is Nitcelis Bravo, I am a systems engineer and a certified Full Stack developer with more than 2 years of experience working on different web development projects such as corporate websites, e-commerce, sales and billing software, application rentals, service management and more. using technologies such as PHP-Laravel, Javascript, ReactJS, Java, MySQL and PostgreSQL. I am very passionate about programming, especially because I enjoy creating algorithms and solving problems using logical reasoning. I am also a person who likes to learn new things every day, I like to work in dynamic teams, and I am always willing to help others. I am currently looking for a job opportunity where I can continue growing as a professional and contribute my knowledge to a company.
               <br><br>If you like what you see, don’t hesitate to contact me.
             </p>
             <div class="social-media">
@@ -92,7 +95,7 @@
               </ul>
             </div>
             <div class="get-resumen">
-              <a href="/docs/Resume - Nitcelis Bravo.pdf" target="_blank" rel="noopener" class="btn btn-bordered btn-white-bg btn-blue-text">Get my resume</a>
+              <a href="/docs/Nitcelis-Bravo-Alcala.pdf" target="_blank" rel="noopener" class="btn btn-bordered btn-white-bg btn-blue-text">Get my resume</a>
             </div>
           </div>
           <div class="tech-skills">
@@ -110,6 +113,10 @@
                 </div>
                 <div class="content">
                   <ul class="skills-details">
+                    <li class="color-change">
+                      <img src="./img/ruby-logo.png" alt="Ruby rounded icon" class="icon" />
+                      <span class="skill-name">Ruby</span>
+                    </li>
                     <li>
                       <img src="./img/PHP-logo.png" alt="PHP rounded icon" class="icon" />
                       <span class="skill-name">PHP</span>
@@ -146,6 +153,10 @@
                 </div>
                 <div class="content">
                   <ul class="skills-details">
+                    <li>
+                      <img src="./img/ruby-on-rails-logo.png" alt="Ruby on Rails rounded icon" class="icon" />
+                      <span class="skill-name">Ruby on Rails</span>
+                    </li>
                     <li>
                       <img src="./img/laravel.png" alt="Laravel rounded icon" class="icon" />
                       <span class="skill-name">Laravel</span>
@@ -187,8 +198,8 @@
                       <span class="skill-name">Project Planning</span>
                     </li>
                     <li>
-                      <img src="./img/communication.png" alt="Communication rounded icon" class="icon" />
-                      <span class="skill-name">Communication</span>
+                      <img src="./img/teamwork-logo.png" alt="Teamwork rounded icon" class="icon" />
+                      <span class="skill-name">Teamwork</span>
                     </li>
                   </ul>
                 </div>
@@ -219,7 +230,7 @@
             </div>
             <span id="errormessage">Your email must be in lowercase letters</span>
             <div class="form-element-container">
-              <button type="submit" class="btn btn-bordered btn-white-bg btn-blue-text">Get in touch</button>
+              <button type="submit" class="btn btn-bordered btn-blue-text btn-static-white">Get in touch</button>
             </div>
           </form>
           <div class="divider-container">
