@@ -133,6 +133,16 @@ const projectData = [
     source: 'https://github.com/NitBravoA92/itzamna-website',
     livelink: 'https://ceitzamna.000webhostapp.com/',
   },
+  {
+    image: './img/global-sales-sys-app.png',
+    title: 'Global Sales Sys Application',
+    client_info: ['Fiverr', 'Full-stack Dev', '2019'],
+    text: 'Global sales sys is software for efficient inventory management, purchasing management, expenses, sales, and billing generation, in a safe and fast way.',
+    long_text: "Global sales sys is software for efficient inventory management, purchasing management, expenses, sales, and billing generation, in a safe and fast way. It is built following the MVC architecture pattern and the LAMP (Linux-Apache-MySQL-PHP) technological stack and in the front-end Bootstrap and the AdminLTE template are used to build the user interfaces and AJAX technology to handle requests to the backend. an asynchronous, fluid, and fast way, achieving SPA-style interfaces.",
+    skills: ['PHP', 'MySQL', 'HTML5', 'CSS3', 'javascript', 'jQuery', 'Bootstrap'],
+    source: '#',
+    livelink: 'http://nitcelisbravoprojects.infinityfreeapp.com/global-sales-sys/App/Login',
+  },
 ];
 
 // Render Project Cards
